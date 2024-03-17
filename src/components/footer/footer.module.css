@@ -1,0 +1,55 @@
+.footerContainer{
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;  
+}
+
+.footerLogoContactNav{
+    padding: 48px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-bottom: 78.5px;
+}
+
+.contactSocialIconsContainer, .contactDetails, .footerUlContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.socialMediaHandleIcons{
+    display: flex;
+    gap: 15px;
+}
+
+.footerHeading{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.footerUlContainer li{
+    list-style-type: none;
+}
+
+.contactDetails a{
+    display: block;
+}
+
+.footerUlContainer li a, .contactDetails a, .rights{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footerContainer hr{
+    margin-bottom: 20px;
+}
+
+.rights{
+    padding: 16px 80px 48px 80px;
+}
