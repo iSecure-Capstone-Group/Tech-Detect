@@ -1,0 +1,10 @@
+.yellowBtn{
+    background-color: #FDAF33;
+    border: none;
+    outline: none;
+    padding: 16px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}

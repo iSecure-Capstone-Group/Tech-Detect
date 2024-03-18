@@ -1,0 +1,38 @@
+.heroContainer{
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;  
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 48px 80px 156px 80px;
+}
+
+
+.heroHeadingContainer{
+    width: 709.62px;
+}
+.heroHeading{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    margin-bottom: 32px;
+}
+
+.heroText{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;  
+    text-align: justify;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+}
+
+.heroImageContainer{
+    width: 357px;
+}
+
+.heroImageContainer img{
+    width: 100%;
+    
+}
+
