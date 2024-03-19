@@ -1,9 +1,11 @@
 import styles from "./buttons.module.css"
 
-const YellowButton = (props) =>{
+const YellowButton = ({ children, variant = "center" }) =>{
     return(
         <>
-            <button type="submit" className={styles.yellowBtn}>{props.yellowBtn}</button>
+            <div className={styles.yellowBtnContainer} buttonVariant={variant}>
+                <button className={styles.yellowBtn} >{children}</button>
+            </div>
         </>
     )
 }
