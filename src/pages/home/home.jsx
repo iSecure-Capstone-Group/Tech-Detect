@@ -7,6 +7,7 @@ import SectionHeading from "../../components/sectionHeading/sectionHeading";
 import AboutUs from "../../components/aboutUs/aboutus";
 import YellowButton from "../../components/buttons/yellowButton";
 import Feautures from "../../components/features/features";
+import FAQs from "../../components/faqs/faqs";
 
 
 const Home = () => {
@@ -52,6 +53,11 @@ const Home = () => {
 
                         <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820683/Frame_40_iwfmuo.svg" featureTitle="Multi-Factor Authentication " featureDescription="Our MFA feature adds an extra layer of protection against unauthorized access to your sensitive data and systems."/>
                     </div>
+                </div>
+
+                <div className={styles.faqsContainer}>
+                    <SectionHeading heading="Frequently Asked Questions"/>
+                    <FAQs />
                 </div>
                 <Contact />
                 <Footer />
