@@ -41,9 +41,17 @@ const Home = () => {
                     </YellowButton>
                 </div>
 
-                <div>
+                <div className={styles.featuresSectionContainer}>
                     <SectionHeading heading="Our Unique Features"/>
-                    <Feautures feature="I am from Features"/>
+                    <div className={styles.featuresContainer}>
+                        <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820650/Frame_37_qwsqu0.svg" featureTitle="Incident Detection and Alerting" featureDescription="Our incident detection system constantly monitors all your digital assets for any phishing, unauthorized access attempts"/>
+
+                        <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820648/Frame_39_s6zzsi.svg" featureTitle="Automated Incident Triage" featureDescription="Efficiently categorize security incidents for rapid response, minimizing disruptions to your digital assets and operations."/>
+
+                        <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820649/Frame_38_fdup1j.svg" featureTitle="Data Loss Prevention (DLP)" featureDescription="OOur DLP feature helps to protect your organization’s sensitive data, reducing the risk of data loss incidents."/>
+
+                        <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820683/Frame_40_iwfmuo.svg" featureTitle="Multi-Factor Authentication " featureDescription="Our MFA feature adds an extra layer of protection against unauthorized access to your sensitive data and systems."/>
+                    </div>
                 </div>
                 <Contact />
                 <Footer />

@@ -1,0 +1,27 @@
+.featureCardContainer{
+    width: 20%;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.featureImageContainer{
+    padding: 40px 0 24px 0;
+    width: 100%;
+}
+
+.featureImageContainer img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.featureTitle{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 33.6px;
+    margin-bottom: 16px;
+}
+
+.featureDescription{
+    font-size: 16px;
+    line-height: 22.4px;
+}

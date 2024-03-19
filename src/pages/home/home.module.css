@@ -1,8 +1,20 @@
 .sponsors{
     background-color:#FFF7EB;
     padding: 24px 80px;
-     margin-bottom: 48px;
+    margin-bottom: 48px;
     
 }
 
+.aboutUsHomeContainer{
+    margin-bottom: 64px;
+}
+
+.featuresSectionContainer{
+    padding: 64px 80px 64.5px 80px;
+}
+
+.featuresContainer{
+    display: flex;
+    justify-content: space-between;
+}
 
