@@ -1,0 +1,30 @@
+.reviewCardContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewCard{
+    width: 28%;
+    text-align: center;
+    margin-top: 48px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.reviewerName{
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.reviewerImageContainer{
+    margin-bottom: 16px;
+}
+
+.reviewerReview{
+    line-height: 22.4px;
+    margin-bottom: 46px;
+}
