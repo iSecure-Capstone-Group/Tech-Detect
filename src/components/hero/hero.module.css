@@ -4,14 +4,14 @@
     font-family: "Montserrat", sans-serif;  
     display: flex;
     justify-content: space-between;
-    
     padding: 48px 80px 156px 80px;
 }
 
 
 .heroHeadingContainer{
-    width: 709.62px;
+    width: 60%;
 }
+
 .heroHeading{
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
@@ -28,7 +28,7 @@
 }
 
 .heroImageContainer{
-    width: 357px;
+    width: 35%;
 }
 
 .heroImageContainer img{

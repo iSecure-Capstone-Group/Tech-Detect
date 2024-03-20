@@ -1,0 +1,31 @@
+.form{
+    width: 40%;
+    margin: auto;
+    padding: 48px 0 70px 0;
+}
+
+input, textarea{
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    border: 0.5px solid #0D0D0D;
+}
+
+textarea{
+    height: 128px;
+}
+
+input{
+    margin-bottom: 16px;
+    padding: 16px 0 16px 8px;
+}
+
+.login, input, textarea{
+    
+    font-family: "Montserrat", sans-serif;
+}
+
+.login{
+    font-size: 16px;
+    margin-bottom: 8px;
+}

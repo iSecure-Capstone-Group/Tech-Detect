@@ -8,9 +8,11 @@ const Hero = () =>  {
             <div className={styles.heroContainer}>
                 
                 <section className={styles.heroHeadingContainer}>
-                    <h1 className={styles.heroHeading}>Safeguarding your Digital Assets with Confidence</h1>
+                    <h2 className={styles.heroHeading}>Safeguarding your Digital Assets with Confidence</h2>
                     <p className={styles.heroText}>Explore innovative security measures to ensure the safety of your digital assets and empower your business with robust cybersecurity solutions.</p>
-                    <YellowButton yellowBtn="Get Started"/>
+                    <YellowButton yellowBtn="Get Started" variant="left">
+                        <p>Get started</p>
+                    </YellowButton>
                 </section>
 
                 <section className={styles.heroImageContainer}>

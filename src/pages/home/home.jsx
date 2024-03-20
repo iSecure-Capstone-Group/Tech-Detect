@@ -59,7 +59,13 @@ const Home = () => {
                     <SectionHeading heading="Frequently Asked Questions"/>
                     <FAQs />
                 </div>
-                <Contact />
+                <div className={styles.contactSection}>
+                    <SectionHeading heading="Contact Us"/>
+                    <Contact />
+                    <YellowButton yellowBtn="Get Started" variant="center">
+                        <p>Read more</p>
+                    </YellowButton>
+                </div>
                 <Footer />
             </div>
         </>
