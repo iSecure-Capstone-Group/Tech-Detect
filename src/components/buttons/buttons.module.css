@@ -12,3 +12,13 @@
 .yellowBtnContainer[buttonVariant="center"]{
     text-align: center;
 }
+.whiteBG{
+    background-color: white;
+    border: 1px solid #FDAF33;
+    padding: 16px 24px;
+    transition: background-color 0.3s;
+}
+
+.whiteBG:hover{
+    background-color: #FDAF33;
+}

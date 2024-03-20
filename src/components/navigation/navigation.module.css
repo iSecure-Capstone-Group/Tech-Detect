@@ -1,0 +1,53 @@
+.navContainer, .navHomeAboutFeaturesResourcesContainer, .navLoginSignupContainer, .navUl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navContainer{
+    padding: 28px 80px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.navUl{
+    width: 68.25%;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.navUl li a{
+    text-decoration: none;
+    color: #0D0D0D;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navUl li a:hover{
+    color: #FDAF33;
+    border-bottom: 1px solid #FDAF33;
+}
+
+.navLogoContainer{
+    width: 20%;
+}
+
+
+.navHomeAboutFeaturesResourcesContainer{
+    width: 50%;
+}
+
+.navLoginSignupContainer{
+    width: 25%;
+}
+
+.navUl .navLoginSignupContainer a{
+    color: #FDAF33;
+    transition: color 0.3s;
+}
+
+.navUl .navLoginSignupContainer a:hover{
+    color: #0D0D0D;
+}
+

@@ -35,7 +35,7 @@ const FAQs = () => {
                 {QuestionsAndAnswers.map((QandA) => (
                     <div key={QandA.id} className={styles.QuestionsAndAnswersContainer}>
                         <div className={styles.questionPlusSign}>
-                            <p>{QandA.question}</p><span onClick={toggleDisplayAnswer}><svg width="9" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.744 8.142V.258h1.512v7.884H3.744ZM.468 4.92V3.498h8.064V4.92H.468Z" fill="#0D0D0D"/></svg></span>
+                            <p>{QandA.question}</p><span onClick={toggleDisplayAnswer}><svg width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1 1.5 6 6 6-6" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                         </div>
                         
                         <p className={styles.answers} style={{ display: displayAnswers }}>{QandA.answer}</p>

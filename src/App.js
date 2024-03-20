@@ -1,12 +1,31 @@
 import './App.css';
-import Home from './pages/home/home';
+import Navigation from './components/navigation/navigation';
+import Home from './pages/homePage/homePage';
+import AboutUsPage from './pages/aboutPage/aboutPage';
+import LoginPage from './pages/logSignPages/loginPage';
+import SignupPage from './pages/logSignPages/signupPage';
+import FeaturesPage from './pages/featuresPage/featuresPage';
+import ResourcePage from './pages/resources/resourcePage';
+import { Routes, Route } from 'react-router-dom';
 
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    
+    <>
+      
+      <Navigation /> {/* Always render navigation */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutPage" element={<AboutUsPage />} />
+        <Route path="/featuresPage" element={<FeaturesPage />} />
+        <Route path="/resourcesPage" element={<ResourcePage />} />
+        <Route path="/loginPage" element={<LoginPage />} />
+        <Route path="/signupPage" element={<SignupPage />} />
+      </Routes>
+      
+    </>
+    
   );
 }
 
