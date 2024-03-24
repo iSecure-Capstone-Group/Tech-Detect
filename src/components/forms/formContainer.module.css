@@ -1,0 +1,105 @@
+.formImageContainer{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+}
+
+.formContainer{
+    width: 50%;
+    margin: auto;
+}
+
+
+.imageContainer{
+    height: auto;
+    width: 40%;
+}
+
+.imageContainer img{
+    height: 100%;
+}
+
+.createAccount{
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif; 
+    margin-bottom: 16px;
+}
+
+.formIntroContainer{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.fillForm, .formInput, .formLlabel{
+    font-size: 16px;
+}
+
+.formInput{
+    width: 100%;
+    padding: 16px 16px 16px 8px;
+    outline: 0;
+    border: 0.5px solid #0D0D0D;
+    border-radius: 4px;
+}
+
+
+.formErrors{
+    margin-bottom: 16px;
+    color: red ;
+}
+.formLabel{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.formCheckbox{
+    /* margin-bottom: 32px; */
+    padding-right: 16px;
+    display: block;
+    /* background-color: red; */
+}
+/* .formErrors{
+    background-color: red;
+} */
+
+.Checkboxterms{
+    display: flex;
+    align-items: center;
+    margin-bottom: 37px;
+}
+
+.Checkboxterms a{
+    text-decoration: none;
+}
+
+.checkboxSpan{
+    padding-left: 8px;
+}
+
+.terms input{
+    padding: 0;
+    margin: 0;
+    width: 10%;
+} 
+
+.createAccountLogin{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.createAccountLogin a{
+    color: #FDAF33;
+    font-weight: 600;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    color: #FDAF33;
+    width: 20px;
+  height: 20px;
+  /* Add custom styles */
+  border: 2px solid #FDAF33;
+  border-radius: 4px;
+  cursor: pointer;
+}

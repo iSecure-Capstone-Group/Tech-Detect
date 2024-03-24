@@ -1,0 +1,36 @@
+.termsContainer{
+    padding: 72px 80px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.termsOfService{
+    font-size: 36px;
+}
+
+.updateDate{
+    margin-top: 48px;
+}
+
+.termsHeading{
+    display: flex;
+    align-items: center;
+    gap: 40%;
+}
+
+.eachTermsDescription{
+    
+    font-size: 16px;
+    
+}
+
+.eachTermsContainer{
+    margin-bottom: 24px;
+}
+
+.eachTermsHeading{
+    font-weight: 600;
+}
+
+.eachTermsDescription{
+    font-weight: normal;
+}

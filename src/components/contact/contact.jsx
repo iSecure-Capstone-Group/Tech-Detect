@@ -37,6 +37,8 @@ const Contact = () =>{
                             onChange={handleChange}
                             value={values.username}
                             placeholder="ENter your full name"
+
+                            className={styles.input}
                         />
                         <div className={styles.formErrors}>{errors.username}</div>
                     </div>
@@ -49,6 +51,7 @@ const Contact = () =>{
                             onChange={handleChange}
                             value={values.password}
                             placeholder="Enter your email address"
+                            className={styles.input}
                         />
                         <div className={styles.formErrors}>{errors.password}</div>
                     </div>
@@ -60,6 +63,7 @@ const Contact = () =>{
                             onChange={handleChange}
                             value={values.password}
                             placeholder="Enter you phone number"
+                            className={styles.input}
                         />
                         <div className={styles.formErrors}>{errors.password}</div>
                     </div>

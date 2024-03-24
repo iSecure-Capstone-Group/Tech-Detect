@@ -26,15 +26,15 @@ const Navigation = () => {
                     <li><Link to="/resourcesPage">Resources</Link></li>
                 </div>
                 <div className={styles.navLoginSignupContainer}>
-                    {/* <li><Link to="/loginPage">Login</Link></li>
-                    <li><Link to="/signupPage">SignUp</Link></li> */}
+                    <li><Link to="/loginPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>
+                    <li><Link to="/signupPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>SignUp</Link></li>
                     {/* Example of conditional navigation */}
-                    {pathname !== '/login' && (
+                    {/* {pathname !== '/login' && (
                         <li><Link to="/login" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>
                     )}
                     {pathname !== '/signup' && (
                         <li><Link to="/signup" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>SignUp</Link></li>
-                    )}
+                    )} */}
                 </div>
             </ul>
         </div>

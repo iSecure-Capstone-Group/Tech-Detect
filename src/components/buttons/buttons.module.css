@@ -12,6 +12,11 @@
 .yellowBtnContainer[buttonVariant="center"]{
     text-align: center;
 }
+.yellowBtnContainer[buttonVariant="long"]{
+    text-align: center;
+    width: 100%;
+    background-color: #FDAF33;
+}
 .whiteBG{
     background-color: white;
     border: 1px solid #FDAF33;

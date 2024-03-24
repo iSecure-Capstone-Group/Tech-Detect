@@ -4,7 +4,7 @@
     padding: 48px 0 70px 0;
 }
 
-input, textarea{
+.input, textarea{
     width: 100%;
     border-radius: 4px;
     outline: none;
@@ -15,12 +15,12 @@ textarea{
     height: 128px;
 }
 
-input{
+.input{
     margin-bottom: 16px;
     padding: 16px 0 16px 8px;
 }
 
-.login, input, textarea{
+.login, .input, textarea{
     
     font-family: "Montserrat", sans-serif;
 }

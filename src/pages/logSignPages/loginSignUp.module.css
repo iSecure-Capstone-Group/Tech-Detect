@@ -1,0 +1,57 @@
+.forgotPassword{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.forgot{
+    color: #FDAF33;
+}
+.googleLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #0D0D0D;
+    padding: 16px 8px;
+    border-radius: 4px;
+}
+
+.googleEmailLogin{
+    text-align: center;
+}
+
+.googleSignin{
+    padding-left: 8px;
+}
+
+legend{
+    padding: 13px;
+}
+
+fieldset{
+    width: 95%;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 34px;
+    border-top: 0.5px solid #0D0D0D;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.bacButton{
+    background-color: transparent;
+    display: block;
+    margin-top: 16px;
+    outline: none;
+    border: 0.5px solid #0D0D0D;
+    width: 100%;
+    border-radius: 4px;
+    padding: 16px 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #0D0D0D;
+    /* background-color: red; */
+}
