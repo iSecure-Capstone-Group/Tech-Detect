@@ -15,7 +15,7 @@ const Home = () => {
     return(
         <>
             <div>
-                <Hero />
+                <Hero heroHeading="Safeguarding your Digital Assets with Confidence" heroText="Explore innovative security measures to ensure the safety of your digital assets and empower your business with robust cybersecurity solutions." image="https://res.cloudinary.com/dbv1y1xey/image/upload/v1711321871/Frame_23_4_yep8p0.svg"/>
                 <div className={styles.sponsors}>
                     <SectionHeading heading="Trusted by"/>
                     <Sponsors >
