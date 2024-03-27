@@ -1,5 +1,5 @@
 import styles from './hero.module.css'
-import image from '../../../src/assets/images/Frame-23.svg'
+// import image from '../../../src/assets/images/Frame-23.svg'
 import YellowButton from '../buttons/yellowButton'
 
 const Hero = (props) =>  {

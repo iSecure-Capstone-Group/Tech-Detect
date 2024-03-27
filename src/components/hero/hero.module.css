@@ -7,6 +7,10 @@
     padding: 48px 80px 156px 80px;
 }
 
+.heroContainer[heroNoBackGround="noBackground"]{
+    background-color: white;
+}
+
 
 .heroHeadingContainer{
     width: 60%;

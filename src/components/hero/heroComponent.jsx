@@ -1,0 +1,6 @@
+const HeroComponent = () => {
+    return(
+        <>
+        </>
+    )
+}
