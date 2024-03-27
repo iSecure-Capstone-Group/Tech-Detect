@@ -12,7 +12,7 @@ return(
                     <p>{props.image}</p>
                 </div>
                 
-                <p className={styles.reviewerName}>{props.name}</p>
+                <p className={`${styles.reviewerName} ${coreValues.reviewerName}`}>{props.name}</p>
                 <p className={styles.reviewerReview}><q>{props.review}</q></p>
 
                 

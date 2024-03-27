@@ -8,6 +8,7 @@ import Review from "../../components/reviews/reviews"
 import CoreValues from "../../components/coreValues/coreValues"
 // import styles from "../../components/hero/hero"
 import aboutPageStyles from "./aboutPage.module.css"
+import MissionVision from "../../components/missionVision/missionVision"
 
 const AboutUsPage = () => {
     return(
@@ -28,6 +29,14 @@ const AboutUsPage = () => {
                     <CoreValues image={(<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.56803 14.9998L13.9014 18.9998L20.568 9.6665M15.2347 28.3332C22.5987 28.3332 28.568 22.3638 28.568 14.9998C28.568 7.63584 22.5987 1.6665 15.2347 1.6665C7.8707 1.6665 1.90137 7.63584 1.90137 14.9998C1.90137 22.3638 7.8707 28.3332 15.2347 28.3332Z" stroke="#FDAF33" stroke-width="2"/></svg>)} name='Excellence' review='Excellence is our standard. We are committed to delivering exceptional results and exceeding expectations at every opportunity.'/>
                 </div>
             </div>
+
+            <MissionVision heading="Mission" variant="lightPink">
+                <p>Mission</p>
+            </MissionVision>
+            <MissionVision heading="Mission" variant="lightBlue">
+                <p>Vission</p>
+            </MissionVision>
+           
 
             <div className={styles.sponsors}>
                     <SectionHeading heading="Trusted by"/>
