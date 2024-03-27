@@ -1,10 +1,9 @@
 .reviewCardContainer{
+    width: 28%;
     display: flex;
-    justify-content: space-between;
 }
 
 .reviewCard{
-    width: 28%;
     text-align: center;
     margin-top: 48px;
     background-color: #FFFFFF;
