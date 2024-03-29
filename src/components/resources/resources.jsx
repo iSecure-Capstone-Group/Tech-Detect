@@ -1,10 +1,11 @@
 import styles from "./resources.module.css"
+import ResourceHero from "../resourceHero/resourceHero"
 
 const Resources = () => {
     return(
         <>
             <div>
-                I am Resources
+                <ResourceHero />
             </div>
         </>
     )
