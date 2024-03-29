@@ -22,7 +22,7 @@ const Navigation = () => {
                 <div className={styles.navHomeAboutFeaturesResourcesContainer}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/aboutPage">About</Link></li>
-                    <li><Link to="/featuresPage">Features</Link></li>
+                    {/* <li><Link to="/featuresPage">Features</Link></li> */}
                     <li><Link to="/resourcesPage">Resources</Link></li>
                 </div>
                 <div className={styles.navLoginSignupContainer}>
