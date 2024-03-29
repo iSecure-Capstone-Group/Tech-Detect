@@ -9,12 +9,28 @@ import CoreValues from "../../components/coreValues/coreValues"
 // import styles from "../../components/hero/hero"
 import aboutPageStyles from "./aboutPage.module.css"
 import MissionVision from "../../components/missionVision/missionVision"
+import aboutUsStyles from "./aboutPage.module.css"
+import AboutPageFeatureSection from "../../components/aboutPageFeature/aboutPageFeatureSection"
+import OurGoals from "../../components/ourGoals/ourGoals"
 
 const AboutUsPage = () => {
     return(
         <>
         <div>
-            <Hero heroHeading="What is TechDetect and How Valid Is It?" heroText="TechDetect Ventures is the go-to partner for individuals who are seeking to protect their digital assets and also people that are concerned about security." image="https://res.cloudinary.com/dbv1y1xey/image/upload/v1711321869/Frame_20_ji1r9i.svg" />
+            <Hero heroHead="What is TechDetect and How Valid Is It?" heroText="TechDetect Ventures is the go-to partner for individuals who are seeking to protect their digital assets and also people that are concerned about security." image="https://res.cloudinary.com/dbv1y1xey/image/upload/v1711321869/Frame_20_ji1r9i.svg" variant="white"/>
+
+            <div className={`${aboutPageStyles.aboutUsGoalsSection}`}>
+                <div className={aboutPageStyles.overlay}>
+                    <p className={`${aboutPageStyles.visionMissionTitle} ${aboutPageStyles.MissionStatement}`}>Our Goals</p>
+                    <p className={`${aboutUsStyles.visionMissionTitle} ${aboutUsStyles.visionMissionTitleCenter}`}>TechDetect in 3years Vision</p>
+                    
+                    <div className={aboutPageStyles.goalReachContainer}>
+                        <OurGoals whoToReach="Helped about" targetReach="10" unit="K"/>
+                        <OurGoals whoToReach="Have a success rate above" targetReach="70" unit="%"/>
+                        <OurGoals whoToReach="Reduce Threat Margin By " targetReach="60" unit="%"/>
+                    </div>
+                </div>
+            </div>
 
 
             <div className={`${styles.reviewContainer} ${aboutPageStyles.reviewContainer}`}>
@@ -31,11 +47,34 @@ const AboutUsPage = () => {
             </div>
 
             <MissionVision heading="Mission" variant="lightPink">
-                <p>Mission</p>
+                <div className={aboutPageStyles.visionMissionContainer}>
+                    <div className={aboutUsStyles.visionMissionIconContainer}>
+                        <p className={`${aboutPageStyles.visionMissionTitle} ${aboutPageStyles.MissionStatement}`}>Our Mission</p>
+                        <div ><svg width="121" height="120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m103.182 17.722 12.57 2.513c.675.135 1.23.63 1.425 1.297a1.879 1.879 0 0 1-.465 1.868l-10.298 10.305a6.568 6.568 0 0 1-4.642 1.92h-8.543L71.78 57.082A11.25 11.25 0 1 1 49.654 60a11.256 11.256 0 0 1 14.168-10.868l21.457-21.465V19.14c0-1.74.69-3.413 1.92-4.643L97.504 4.192a1.875 1.875 0 0 1 1.868-.465c.667.195 1.162.75 1.297 1.425l2.513 12.57Z" fill="#8B601C"/><path d="M15.905 60a45 45 0 1 0 88.267-12.42 5.64 5.64 0 0 1 .332-4.433 5.644 5.644 0 0 1 3.444-2.811 5.635 5.635 0 0 1 7.039 4.147 56.262 56.262 0 0 1-25.542 63.939 56.267 56.267 0 0 1-68.305-8.657A56.258 56.258 0 0 1 76.422 5.917a5.625 5.625 0 0 1-3.097 10.816A45.007 45.007 0 0 0 15.904 60Z" fill="#8B601C"/><path d="M38.404 60a22.515 22.515 0 0 0 35.242 18.57 22.501 22.501 0 0 0 9.6-21.202 5.61 5.61 0 0 1 7.838-5.866 5.626 5.626 0 0 1 3.337 4.575 33.75 33.75 0 1 1-29.647-29.602 5.627 5.627 0 0 1 4.385 8.355 5.625 5.625 0 0 1-5.66 2.82A22.5 22.5 0 0 0 38.404 60Z" fill="#8B601C"/></svg></div>
+                    </div>
+
+                    <div className={`${aboutPageStyles.visionMissionStatement} ${aboutPageStyles.MissionStatement}`}>
+                        <p >TechDetect Ventures is dedicated to identifying Security threats and training personnel's on the issue of security and supporting innovative tech startups with the potential to disrupt industries, drive growth, and create lasting value for both investors and society.</p>
+                    </div>
+                </div>
             </MissionVision>
+
             <MissionVision heading="Mission" variant="lightBlue">
-                <p>Vission</p>
+                <div className={aboutPageStyles.visionMissionContainer}>
+                    <div className={aboutUsStyles.visionMissionIconContainer}>
+                        <p className={aboutUsStyles.visionMissionTitle}>Our Vision</p>
+                        <div ><svg width="121" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M105.904 35.49c.035.331-.07.663-.308.973-.238.31-.604.591-1.074.826a6.43 6.43 0 0 1-1.652.537c-.62.119-1.283.171-1.946.154h-20.04c-1.347.083-2.715.01-3.998-.21-1.284-.222-2.45-.586-3.41-1.066-.96-.48-1.688-1.063-2.13-1.705-.443-.642-.587-1.325-.422-1.999v-5.01c-.034-.331.071-.663.309-.973.238-.31.604-.591 1.073-.826a6.44 6.44 0 0 1 1.653-.537 9.135 9.135 0 0 1 1.945-.154h25.02a9.139 9.139 0 0 1 1.946.154 6.43 6.43 0 0 1 1.652.537c.47.235.836.516 1.074.826.238.31.343.642.308.973v7.5ZM50.884 33c.177.679.04 1.369-.401 2.017-.441.648-1.174 1.237-2.142 1.721s-2.146.85-3.442 1.071c-1.297.22-2.677.29-4.035.201h-19.98a9.137 9.137 0 0 1-1.946-.154 6.44 6.44 0 0 1-1.652-.537c-.47-.235-.835-.516-1.073-.826-.238-.31-.343-.642-.309-.973v-7.53c-.034-.331.071-.663.309-.973.238-.31.604-.591 1.073-.826a6.44 6.44 0 0 1 1.652-.537 9.137 9.137 0 0 1 1.946-.154h25.02a9.135 9.135 0 0 1 1.946.154 6.44 6.44 0 0 1 1.652.537c.47.235.835.516 1.074.826.238.31.343.642.308.973V33ZM.904 18.6v18.84c0 .16.127.312.352.424.225.113.53.176.848.176h10.32c.842.76 2.077 1.392 3.576 1.83 1.5.438 3.208.666 4.944.66h19.98c3.101.119 6.198-.255 8.849-1.069 2.65-.813 4.72-2.025 5.911-3.461.076-.113.22-.212.415-.282.193-.07.426-.108.665-.108h8.34c.24 0 .472.038.666.108.194.07.339.169.414.282 1.173 1.447 3.233 2.672 5.886 3.497 2.652.824 5.76 1.207 8.874 1.093h19.98c3.3 0 6.6 0 8.22-2.1.083-.111.23-.207.422-.277.192-.07.421-.109.658-.113h9.48c.319 0 .624-.063.849-.176.225-.112.351-.265.351-.424V18.6c0-.16-.126-.312-.351-.424a1.957 1.957 0 0 0-.849-.176H2.104c-.318 0-.623.063-.848.176-.225.112-.352.265-.352.424Z" fill="#0D0D0D"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(.904)" d="M0 0h120v60H0z"/></clipPath></defs></svg></div>
+                    </div>
+
+                    <div className={aboutPageStyles.visionMissionStatement}>
+                        <p>To be the leading Security firm investing in groundbreaking technology companies that are shaping the future and helping to protect digital assets.</p>
+                    </div>
+
+                    
+                </div>
             </MissionVision>
+
+            <AboutPageFeatureSection />
            
 
             <div className={styles.sponsors}>
