@@ -7,8 +7,13 @@
     padding: 48px 80px 156px 80px;
 }
 
-.heroContainer[heroNoBackGround="noBackground"]{
-    background-color: white;
+.heroContainer[variantWhite="white"]{
+    background-color: #FFF7EB;
+    color: #0D0D0D;
+}
+
+.yellowButtonContainer[variantWhite="white"]{
+    display: none;
 }
 
 
