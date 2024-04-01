@@ -1,0 +1,39 @@
+.newsletterContainer{
+    text-align: center;
+    font-family: 18px;
+    font-family: "Montserrat", sans-serif; 
+}
+
+.subscribeFormContainer{
+    width: 40%;
+    margin: auto;
+    border: 0.5px solid #989898;
+    
+    display: flex;
+    height: 100%;
+
+}
+
+.subscribeForm{
+    width: 80%;
+    
+}
+.subscribeButton{
+    width: 20%;
+    height: 100%;
+    background-color: #FDAF33;
+}
+.subscribeForm,.subscribeButton button{
+    outline: none;
+    border: none;
+    padding: 16px 8px;
+    background-color: transparent;
+    font-size: 16px;
+    
+
+}
+
+.newsletterInstruction{
+    margin: 24px 0 64px 0;
+}
+
