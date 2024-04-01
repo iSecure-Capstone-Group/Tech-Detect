@@ -12,6 +12,7 @@ import MissionVision from "../../components/missionVision/missionVision"
 import aboutUsStyles from "./aboutPage.module.css"
 import AboutPageFeatureSection from "../../components/aboutPageFeature/aboutPageFeatureSection"
 import OurGoals from "../../components/ourGoals/ourGoals"
+import Newsletter from "../../components/newsletter/newsletter"
 
 const AboutUsPage = () => {
     return(
@@ -96,6 +97,10 @@ const AboutUsPage = () => {
                 </div>
             </div>
 
+            <div className={styles.subscribeNewsletter}>
+                <SectionHeading heading="Subscribe to our Newsletter"/>
+                <Newsletter/>
+            </div>
 
             <Footer />
         </div>
