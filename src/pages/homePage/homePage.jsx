@@ -9,6 +9,7 @@ import YellowButton from "../../components/buttons/yellowButton";
 import Feautures from "../../components/features/features";
 import FAQs from "../../components/faqs/faqs";
 import Review from "../../components/reviews/reviews";
+import Newsletter from "../../components/newsletter/newsletter";
 
 
 const Home = () => {
@@ -81,6 +82,12 @@ const Home = () => {
                         <p>Read more</p>
                     </YellowButton>
                 </div>
+
+                <div className={styles.subscribeNewsletter}>
+                    <SectionHeading heading="Subscribe to our Newsletter"/>
+                    <Newsletter/>
+                </div>
+
                 <Footer />
             </div>
         </>

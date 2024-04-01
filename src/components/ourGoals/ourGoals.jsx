@@ -13,7 +13,7 @@ const OurGoals = ({ targetReach, unit, whoToReach }) => {
       if (currentReach >= Number(targetReach)) {
         clearInterval(intervalId);
       }
-    }, 150);
+    }, 100);
 
     return () => clearInterval(intervalId);
   }, [currentReach, targetReach]);
