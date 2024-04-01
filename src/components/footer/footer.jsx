@@ -7,7 +7,11 @@ const Footer = () => {
             <div className={styles.footerContainer}>
                 <section className={styles.footerLogoContactNav}>
                     <div>
-                        <p className={styles.logo}>Logo</p>
+                    <div className={styles.logo}>
+                <img src={"https://res.cloudinary.com/dbv1y1xey/image/upload/v1711955663/Frame_427321927_mxssut.svg"} alt="Logo" />
+
+                
+            </div>
                         <div className={styles.contactSocialIconsContainer}>
                             <div className={styles.contactDetails}>
                                 <a href="tel:+2349145458987">+2349145458987</a>
@@ -29,18 +33,18 @@ const Footer = () => {
                     <div>
                         <p className={styles.footerHeading}>Company</p>
                         <ul className={styles.footerUlContainer}>
-                            <li><Link to="Home" >Home</Link></li>
-                            <li><Link to="Home" >About Us</Link></li>
-                            <li><Link to="Home" >Features</Link></li>
-                            <li><Link to="Home" >Resources</Link></li>
-                            <li><Link to="Home" >FAQs</Link></li>
+                            <li className={styles.footerLi}><Link to="Home" >Home</Link></li>
+                            <li className={styles.footerLi}><Link to="Home" >About Us</Link></li>
+                            <li className={styles.footerLi}><Link to="Home" >Features</Link></li>
+                            <li className={styles.footerLi}><Link to="Home" >Resources</Link></li>
+                            <li className={styles.footerLi}><Link to="Home" >FAQs</Link></li>
                         </ul>
                     </div>
                     <div>
                         <p className={styles.footerHeading}>Legal</p>
                         <ul className={styles.footerUlContainer}>
-                            <li><Link to="Home" >Terms of Service</Link></li>
-                            <li><Link to="Home" >Privacy Policy</Link></li>
+                            <li className={styles.footerLi}><Link to="Home" >Terms of Service</Link></li>
+                            <li className={styles.footerLi}><Link to="Home" >Privacy Policy</Link></li>
                         </ul>
                     </div>
                 </section>

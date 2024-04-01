@@ -8,6 +8,7 @@ import FeaturesPage from './pages/featuresPage/featuresPage';
 import ResourcePage from './pages/resources/resourcePage';
 import ForgotPasswordPage from './pages/logSignPages/forgotPassword';
 import Terms from './pages/logSignPages/terms';
+import DataPrivacyArticle from './pages/resources/dataPrivacyArticle';
 import { Routes, Route } from 'react-router-dom';
 
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/aboutPage" element={<AboutUsPage />} />
         <Route path="/featuresPage" element={<FeaturesPage />} />
         <Route path="/resourcesPage" element={<ResourcePage />} />
+        <Route path="/dataPrivacyArticle" element={<DataPrivacyArticle />} />
         <Route path="/loginPage" element={<LoginPage />} />
         <Route path="/forgotPassword" element={<ForgotPasswordPage />} />
         <Route path="/terms" element={<Terms />} />
