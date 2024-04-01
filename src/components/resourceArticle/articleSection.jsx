@@ -1,8 +1,9 @@
 import YellowButton from "../buttons/yellowButton";
-import { Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import articleSectionStyles from "./articleSection.module.css"
 import styles from "../../pages/logSignPages/terms.module.css"
 import formContainerStyles from "../forms/formContainer.module.css"
+import DataPrivacyArticle from "../../pages/resources/dataPrivacyArticle";
 
 
 const Articles = (props) => {
@@ -39,7 +40,10 @@ const Articles = (props) => {
                 </div>
                 
                 <YellowButton yellowBtn="Get Started" variant="left">
-                    <Link to="" className={articleSectionStyles.featureArticle}>Read More</Link>
+                    <Link to="/dataPrivacyArticle" className={articleSectionStyles.featureArticle}>Read More</Link>
+                    {/* <Routes>
+                        <Route path="/dataPrivcacyArticle" element={<DataPrivacyArticle />} />
+                    </Routes> */}
                 </YellowButton>
                 
             </div>

@@ -8,6 +8,7 @@ import Categories from "../../components/categoriesSection/categories"
 import Newsletter from "../../components/newsletter/newsletter"
 import Footer from "../../components/footer/footer"
 import homeStyles from "../homePage/home.module.css"
+// import DataPrivacyArticle from "./dataPrivacyArticle"
 
 const ResourcePage = () => {
     return(
