@@ -27,3 +27,11 @@
 .whiteBG:hover{
     background-color: #FDAF33;
 }
+
+.yellowBtn[borderWhite="white"]{
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    padding: 16px 16px;
+    
+}

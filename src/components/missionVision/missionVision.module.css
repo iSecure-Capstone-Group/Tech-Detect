@@ -1,0 +1,17 @@
+
+
+
+.missionVisionContainer[backgroundVariant="lightPink"]{
+    /* text-align: center;
+    width: 100%; */
+    background-color: #FFF7EB;
+}
+.missionVisionContainer[backgroundVariant="lightBlue"]{
+    /* text-align: center;
+    width: 100%; */
+    background-color: #E9E9E9;
+}
+
+.missionVisionContainer{
+    padding: 48px 0 123px 80px;
+}

@@ -1,0 +1,32 @@
+.articleSection{
+    margin-top: 109px;
+}
+
+.categoriesSection{
+    padding: 40px 0 64px 0;
+}
+
+/* DATA PRIVACY ARTICLE */
+
+.articleHero{
+
+}
+
+.articleHero img{
+    width: 100%;
+}
+
+.ul{
+    padding-left: 30px;
+}
+.ul > .li{
+    list-style-type: disc;
+    margin-bottom: 16px;
+    text-align: justify;
+   
+   
+}
+
+.dataPrivacyContainer{
+    padding: 48px 80px 112.5px 80px;
+}

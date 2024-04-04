@@ -16,18 +16,20 @@ const Navigation = () => {
       <nav>
         <div className={styles.navContainer}>
             <div className={styles.navLogoContainer}>
-                <img src="" alt="Logo" />
+                <img src={"https://res.cloudinary.com/dbv1y1xey/image/upload/v1711955663/Frame_427321927_mxssut.svg"} alt="Logo" />
+
+                
             </div>
             <ul className={styles.navUl}>
                 <div className={styles.navHomeAboutFeaturesResourcesContainer}>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/aboutPage">About</Link></li>
-                    <li><Link to="/featuresPage">Features</Link></li>
-                    <li><Link to="/resourcesPage">Resources</Link></li>
+                    <li className={styles.navli}><Link to="/">Home</Link></li>
+                    <li className={styles.navli}><Link to="/aboutPage">About</Link></li>
+                    {/* <li><Link to="/featuresPage">Features</Link></li> */}
+                    <li className={styles.navli}><Link to="/resourcesPage">Resources</Link></li>
                 </div>
                 <div className={styles.navLoginSignupContainer}>
-                    <li><Link to="/loginPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>
-                    <li><Link to="/signupPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>SignUp</Link></li>
+                    <li className={`${styles.navli} ${styles.navliWhiteHover}`}><Link to="/loginPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>
+                    <li className={`${styles.navli} ${styles.navliWhiteHover}`}><Link to="/signupPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>SignUp</Link></li>
                     {/* Example of conditional navigation */}
                     {/* {pathname !== '/login' && (
                         <li><Link to="/login" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>

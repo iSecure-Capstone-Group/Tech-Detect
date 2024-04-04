@@ -1,0 +1,8 @@
+.reviewCardContainer{
+    width: 23%;
+    display: flex;
+}
+
+.reviewerName{
+    color: #FDAF33;
+}

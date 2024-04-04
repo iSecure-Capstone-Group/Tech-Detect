@@ -5,7 +5,7 @@
 }
 
 .navContainer{
-    padding: 28px 80px;
+    padding: 10px 80px;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
@@ -14,19 +14,23 @@
     width: 68.25%;
 }
 
-ul li{
+.navUl > div > .navli{
     list-style-type: none;
 }
 
-.navUl li a{
+.navUl > div > .navli a, .navUl > div > .navliWhiteHover a{
     text-decoration: none;
     color: #0D0D0D;
     transition: color 0.3s, border-bottom 0.3s;
 }
 
-.navUl li a:hover{
+.navUl > div > .navli a:hover{
     color: #FDAF33;
     border-bottom: 1px solid #FDAF33;
+}
+
+.navUl > div > .navliWhiteHover a:hover{
+    color: white;
 }
 
 .navLogoContainer{

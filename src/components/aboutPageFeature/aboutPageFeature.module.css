@@ -1,0 +1,59 @@
+.aboutPageFeatureSectionContainer{
+    background-color: #E69F2E;
+    font-family: "Poppins", sans-serif;
+    padding: 80px 62px;
+    color: white;
+}
+
+.featureIconContainer{
+    border: 0.888194px solid #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 42.6333px 21.3167px;
+    border-radius: 4px;
+    /* width: 30%; */
+}
+
+.aboutPageFeatureCard{
+    display: flex;
+    justify-content: space-between;
+}
+
+.borderWhite{
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+.techDetectIconContainer{
+    display: flex;
+    align-items: center;
+    gap: 10.66px;
+    margin-bottom: 21.32px;
+}
+
+.startNowContainer{
+    width: 38%;
+}
+
+.featureBenefit{
+    font-size: 32px;
+    line-height: 47.96px;
+    font-weight: 600;
+    margin-bottom: 21.32px;
+}
+
+.svgFeaturesContainer{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.feature{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}

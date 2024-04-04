@@ -43,7 +43,7 @@ const LoginPage = () => {
                         {({errors}) => (
                             <Form className={formContainerStyles.form}>
 
-                                <label htmlFor="name" className={formContainerStyles.formLabel}>Email</label>
+                                <label htmlFor="email" className={formContainerStyles.formLabel}>Email</label>
                                 <Field type="email" name="email" placeholder="Enter your email address" className={formContainerStyles.formInput}></Field>
                                 {/* <input 
                                     type="email" 
