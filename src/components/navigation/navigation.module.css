@@ -18,7 +18,7 @@
     list-style-type: none;
 }
 
-.navUl > div > .navli a{
+.navUl > div > .navli a, .navUl > div > .navliWhiteHover a{
     text-decoration: none;
     color: #0D0D0D;
     transition: color 0.3s, border-bottom 0.3s;
@@ -27,6 +27,10 @@
 .navUl > div > .navli a:hover{
     color: #FDAF33;
     border-bottom: 1px solid #FDAF33;
+}
+
+.navUl > div > .navliWhiteHover a:hover{
+    color: white;
 }
 
 .navLogoContainer{

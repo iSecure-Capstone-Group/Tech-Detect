@@ -28,8 +28,8 @@ const Navigation = () => {
                     <li className={styles.navli}><Link to="/resourcesPage">Resources</Link></li>
                 </div>
                 <div className={styles.navLoginSignupContainer}>
-                    <li className={styles.navli}><Link to="/loginPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>
-                    <li className={styles.navli}><Link to="/signupPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>SignUp</Link></li>
+                    <li className={`${styles.navli} ${styles.navliWhiteHover}`}><Link to="/loginPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>
+                    <li className={`${styles.navli} ${styles.navliWhiteHover}`}><Link to="/signupPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>SignUp</Link></li>
                     {/* Example of conditional navigation */}
                     {/* {pathname !== '/login' && (
                         <li><Link to="/login" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>
