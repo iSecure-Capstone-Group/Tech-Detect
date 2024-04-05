@@ -9,6 +9,10 @@
     margin-bottom: 64px;
 }
 
+.longYellowbutton{
+    display: none;
+}
+
 .featuresSectionContainer{
     padding: 64px 80px 64.5px 80px;
 }
@@ -41,4 +45,43 @@
     background-color: #FFF7EB;
     padding: 48px;
 }
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .sponsors{
+        padding: 30px 40px;
+    }
+
+    .shortYellowButton{
+        display: none;
+    }
+
+    .longYellowbutton{
+        display: block;
+        padding: 0 24px 0 24px;
+        width: 100%;
+    }
+
+    .featuresContainer{
+        flex-wrap: wrap;
+    }
+
+    .reviewFlex{
+        flex-wrap: wrap;
+    }
+
+    .contactSection .longYellowbutton{
+        width: 95%;
+        margin: auto;
+    }
+
+    /* .reviewContainer{
+        background-color: #E9E9E9;
+        padding: 64px 80px 68px 80px;
+    } */
+
+    
+}
+
 

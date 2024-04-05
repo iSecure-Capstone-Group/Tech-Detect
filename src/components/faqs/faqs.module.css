@@ -32,3 +32,13 @@
     border-radius: 4px;
     padding: 8px 16px;
 }
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .QuestionsAndAnswersContainer{
+        
+        width: 85%;
+        
+    }
+}

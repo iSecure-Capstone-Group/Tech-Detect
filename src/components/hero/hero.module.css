@@ -1,3 +1,7 @@
+.displayLong{
+    display: none;
+}
+
 .heroContainer{
     background-color: #121212;
     color: #FFFFFF;
@@ -43,5 +47,39 @@
 .heroImageContainer img{
     width: 100%;
     
+}
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .heroContainer{
+        flex-wrap: wrap;
+        padding: 48px 48px 58px 48px;
+    }
+
+    .heroHeadingContainer, .heroImageContainer, .displayLong{
+        width: 100%;
+    }
+
+    .heroHeading{
+        font-size: 40px;
+    }
+
+    .heroText{
+        font-size: 20px;
+    }
+
+    .yellowButtonContainer{
+        display: none;
+    }
+
+    .displayLong{
+        display: block;
+        margin-top: 40px;
+    }
+
+
+
+   
 }
 

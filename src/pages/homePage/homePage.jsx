@@ -25,9 +25,17 @@ const Home = () => {
                 <div className={styles.aboutUsHomeContainer}>
                     <SectionHeading heading="About Us"/>
                     <AboutUs />
-                    <YellowButton yellowBtn="Get Started" variant="center">
-                        <p>Read more</p>
-                    </YellowButton>
+                    <div className={styles.shortYellowButton}>
+                        <YellowButton yellowBtn="Get Started" variant="center">
+                            <p>Read more</p>
+                        </YellowButton>
+                    </div>
+
+                    <div className={styles.longYellowbutton}>
+                        <YellowButton yellowBtn="Get Started" variant="long">
+                            <p>Read more</p>
+                        </YellowButton>
+                    </div>
                 </div>
 
                 <div className={styles.featuresSectionContainer}>
@@ -41,11 +49,6 @@ const Home = () => {
 
                         <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820683/Frame_40_iwfmuo.svg" featureTitle="Multi-Factor Authentication " featureDescription="Our MFA feature adds an extra layer of protection against unauthorized access to your sensitive data and systems."/>
                     </div>
-                </div>
-
-                <div className={styles.faqsContainer}>
-                    <SectionHeading heading="Frequently Asked Questions"/>
-                    <FAQs />
                 </div>
 
                 <div className={styles.reviewContainer}>
@@ -75,12 +78,25 @@ const Home = () => {
                     </div>
                 </div>
 
+                <div className={styles.faqsContainer}>
+                    <SectionHeading heading="Frequently Asked Questions"/>
+                    <FAQs />
+                </div>
+
                 <div className={styles.contactSection}>
                     <SectionHeading heading="Contact Us"/>
                     <Contact />
-                    <YellowButton yellowBtn="Get Started" variant="center">
-                        <p>Read more</p>
-                    </YellowButton>
+                    <div className={styles.shortYellowButton}>
+                        <YellowButton yellowBtn="Get Started" variant="center">
+                            <p>Submit</p>
+                        </YellowButton>
+                    </div>
+
+                    <div className={styles.longYellowbutton}>
+                        <YellowButton yellowBtn="Get Started" variant="long">
+                            <p>Submit</p>
+                        </YellowButton>
+                    </div>
                 </div>
 
                 <div className={styles.subscribeNewsletter}>

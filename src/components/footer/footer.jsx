@@ -6,12 +6,12 @@ const Footer = () => {
         <>
             <div className={styles.footerContainer}>
                 <section className={styles.footerLogoContactNav}>
-                    <div>
-                    <div className={styles.logo}>
-                <img src={"https://res.cloudinary.com/dbv1y1xey/image/upload/v1711955663/Frame_427321927_mxssut.svg"} alt="Logo" />
+                    <div className={styles.footerSectionContainer}>
+                        <div className={styles.logo}>
+                            <img src={"https://res.cloudinary.com/dbv1y1xey/image/upload/v1711955663/Frame_427321927_mxssut.svg"} alt="Logo" />
 
-                
-            </div>
+                            
+                        </div>
                         <div className={styles.contactSocialIconsContainer}>
                             <div className={styles.contactDetails}>
                                 <a href="tel:+2349145458987">+2349145458987</a>
@@ -30,7 +30,7 @@ const Footer = () => {
                         </div>
                         
                     </div>
-                    <div>
+                    <div className={styles.footerSectionContainer}>
                         <p className={styles.footerHeading}>Company</p>
                         <ul className={styles.footerUlContainer}>
                             <li className={styles.footerLi}><Link to="Home" >Home</Link></li>
@@ -40,7 +40,7 @@ const Footer = () => {
                             <li className={styles.footerLi}><Link to="Home" >FAQs</Link></li>
                         </ul>
                     </div>
-                    <div>
+                    <div className={styles.footerSectionContainer}>
                         <p className={styles.footerHeading}>Legal</p>
                         <ul className={styles.footerUlContainer}>
                             <li className={styles.footerLi}><Link to="Home" >Terms of Service</Link></li>

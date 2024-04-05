@@ -14,6 +14,13 @@
     border-radius: 4px;
 }
 
+.titleDescriptionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 250px; */
+}
+
 .featureTitle{
     font-size: 24px;
     font-weight: bold;
@@ -25,3 +32,28 @@
     font-size: 16px;
     line-height: 22.4px;
 }
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .featureCardContainer{
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+}
+
+
+/* @media screen and (min-width: 1024px){
+    .titleDescriptionContainer{
+        background-color: red;
+        height: 230px;
+    }
+} */
+
+/* @media screen and (min-width: 1600px){
+    .titleDescriptionContainer{
+        background-color: red;
+        height: 180px;
+    }
+} */

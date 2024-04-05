@@ -53,3 +53,17 @@
 .rights{
     padding: 16px 80px 48px 80px;
 }
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .footerLogoContactNav{
+        flex-wrap: wrap;
+        gap: 48px;
+    }
+
+    .footerSectionContainer{
+        width: 100%;
+
+    }
+}
