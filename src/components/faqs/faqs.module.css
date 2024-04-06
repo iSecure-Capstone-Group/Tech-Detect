@@ -48,3 +48,10 @@
         width: 80%; 
     }
 }
+
+/* ###############  LAPTOP VIEW  ############## */
+@media screen and (min-width: 1001px) and (max-width: 1280px){
+    .QuestionsAndAnswersContainer{
+        width: 60%; 
+    }
+}

@@ -67,3 +67,10 @@
         margin: auto;
     }
 }
+
+@media screen and (min-width: 1001px) and (max-width: 1193px){
+    .reviewRateContainer{
+        /* display: block; */
+        height: 300px;
+    }
+}

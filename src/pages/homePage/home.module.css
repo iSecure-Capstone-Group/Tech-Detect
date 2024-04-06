@@ -98,4 +98,12 @@
     }
 }
 
+/* ###############  LAPTOP VIEW  ############## */
+@media screen and (min-width: 1001px) and (max-width: 1349px){
+    .sponsors{
+        padding: 24px 20px;
+        
+    }
+}
+
 

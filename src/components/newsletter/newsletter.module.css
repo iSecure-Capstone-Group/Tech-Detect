@@ -52,3 +52,10 @@
     }
 }
 
+/* ###############  LAPTOP VIEW  ############## */
+@media screen and (min-width: 1001px) and (max-width: 1280px){
+    .subscribeFormContainer{
+        width: 60%;
+    }
+}
+

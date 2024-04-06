@@ -39,7 +39,6 @@
     .featureCardContainer{
         width: 100%;
         margin-top: 20px;
-        
     }
 }
 
@@ -50,5 +49,23 @@
         width: 46%;
         margin-top: 20px;
         
+    }
+}
+
+/* ###############  LAPTOP VIEW  ############## */
+@media screen and (min-width: 1001px) and (max-width: 1060px){
+    .titleDescriptionContainer{
+        height: 270px;
+    }
+}
+
+@media screen and (min-width: 1061px) and (max-width: 1120px){
+    .titleDescriptionContainer{
+        height: 260px;
+    }
+}
+@media screen and (min-width: 1121px) and (max-width: 1400px){
+    .titleDescriptionContainer{
+        height: 240px;
     }
 }
