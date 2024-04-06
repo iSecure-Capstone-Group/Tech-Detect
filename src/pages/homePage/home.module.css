@@ -47,6 +47,7 @@
 }
 
 /* ###############  RESPONSIVE DESIGN  ##################### */
+/* ###############  MOBILE VIEW  ############## */
 
 @media screen and (min-width: 200px) and (max-width: 768px){
     .sponsors{
@@ -79,9 +80,22 @@
     /* .reviewContainer{
         background-color: #E9E9E9;
         padding: 64px 80px 68px 80px;
-    } */
+    } */ 
+}
 
-    
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .sponsors{
+        padding: 30px 20px;
+    }
+
+    .featuresContainer{
+        flex-wrap: wrap;
+    }
+
+    .reviewFlex{
+        flex-wrap: wrap;
+    }
 }
 
 

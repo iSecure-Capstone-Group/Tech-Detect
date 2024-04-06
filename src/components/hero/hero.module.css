@@ -51,6 +51,8 @@
 
 /* ###############  RESPONSIVE DESIGN  ##################### */
 
+
+/* ###########  MOBILE VIEW  ############ */
 @media screen and (min-width: 200px) and (max-width: 768px){
     .heroContainer{
         flex-wrap: wrap;
@@ -76,10 +78,25 @@
     .displayLong{
         display: block;
         margin-top: 40px;
+    } 
+}
+
+
+/* ###############  TABLET VIEW  ############## */
+
+@media screen and (min-width: 767px) and (max-width: 1000px){
+
+    .heroContainer{
+        flex-wrap: wrap;
+        padding: 48px 40px 58px 40px;
     }
 
+    .heroHeading{
+        font-size: 40px;
+    }
 
-
-   
+    .heroText{
+        font-size: 20px;
+    }
 }
 

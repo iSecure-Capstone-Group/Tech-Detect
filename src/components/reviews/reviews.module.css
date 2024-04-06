@@ -39,14 +39,16 @@
 
 /* ###############  RESPONSIVE DESIGN  ##################### */
 
+/* ###############  MOBILE VIEW  ############## */
+
 @media screen and (min-width: 200px) and (max-width: 768px){
 
     .reviewCardContainer{
         width: 100%;
     }
     .reviewRateContainer{
-        display: block;
-        height: 200px;
+        /* display: block; */
+        height: 280px;
     }
     .reviewerReview{
         margin-bottom: 24px;
@@ -54,16 +56,14 @@
     }
 }
 
-/* @media screen and (min-width: 1280px){
-    .reviewRateContainer{
-        background-color: red;
-        height: 300px;
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .reviewCardContainer{
+        width: 46%;
+        
     }
-} */
 
-/* @media screen and (min-width: 1600px){
-    .reviewRateContainer{
-        background-color: red;
-        height: 200px;
+    .reviewCardContainer:last-child{
+        margin: auto;
     }
-} */
+}

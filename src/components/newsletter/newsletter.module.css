@@ -38,9 +38,17 @@
 
 /* ###############  RESPONSIVE DESIGN  ##################### */
 
+/* ###############  MOBILE VIEW  ############## */
 @media screen and (min-width: 200px) and (max-width: 768px){
     .subscribeFormContainer{
         width: 100%;
+    }
+}
+
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .subscribeFormContainer{
+        width: 85%;
     }
 }
 

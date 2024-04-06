@@ -44,16 +44,11 @@
 }
 
 
-/* @media screen and (min-width: 1024px){
-    .titleDescriptionContainer{
-        background-color: red;
-        height: 230px;
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .featureCardContainer{
+        width: 46%;
+        margin-top: 20px;
+        
     }
-} */
-
-/* @media screen and (min-width: 1600px){
-    .titleDescriptionContainer{
-        background-color: red;
-        height: 180px;
-    }
-} */
+}

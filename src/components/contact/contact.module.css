@@ -31,9 +31,16 @@ textarea{
 }
 
 /* ###############  RESPONSIVE DESIGN  ##################### */
-
+/* ###############  MOBILE VIEW  ############## */
 @media screen and (min-width: 200px) and (max-width: 768px){
     .form{
         width: 85%;
+    }
+}
+
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .form{
+        width: 80%;
     }
 }
