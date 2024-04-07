@@ -6,3 +6,25 @@
 .reviewerName{
     color: #FDAF33;
 }
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+/* ###############  MOBILE VIEW  ############## */
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .reviewCardContainer{
+        width: 100%;
+    }
+}
+
+/* ###############  TABLET VIEW  ############## */
+
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .reviewCardContainer{
+        width: 45%;
+        margin: 0;
+    }
+
+    .reviewCardContainer:last-child{
+        margin: 0;
+    }
+}

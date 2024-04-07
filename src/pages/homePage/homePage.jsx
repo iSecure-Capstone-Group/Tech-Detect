@@ -41,7 +41,7 @@ const Home = () => {
                 <div className={styles.featuresSectionContainer}>
                     <SectionHeading heading="Our Unique Features"/>
                     <div className={styles.featuresContainer}>
-                        <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820650/Frame_37_qwsqu0.svg" featureTitle="Incident Detection and Alerting" featureDescription="Our incident detection system constantly monitors all your digital assets for any phishing, unauthorized access attempts"/>
+                        <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820650/Frame_37_qwsqu0.svg" featureTitle="Incident Detection" featureDescription="Our incident detection system constantly monitors all your digital assets for any phishing, unauthorized access attempts"/>
 
                         <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820648/Frame_39_s6zzsi.svg" featureTitle="Automated Incident Triage" featureDescription="Efficiently categorize security incidents for rapid response, minimizing disruptions to your digital assets and operations."/>
 

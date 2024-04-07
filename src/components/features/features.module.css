@@ -44,7 +44,7 @@
 
 
 /* ###############  TABLET VIEW  ############## */
-@media screen and (min-width: 767px) and (max-width: 1000px){
+@media screen and (min-width: 769px) and (max-width: 1253px){
     .featureCardContainer{
         width: 46%;
         margin-top: 20px;
@@ -53,13 +53,14 @@
 }
 
 /* ###############  LAPTOP VIEW  ############## */
-@media screen and (min-width: 1001px) and (max-width: 1060px){
+/* @media screen and (min-width: 1254px) and (max-width: 1400px){
     .titleDescriptionContainer{
-        height: 270px;
+        height: 200px;
+        background-color: red;
     }
-}
+} */
 
-@media screen and (min-width: 1061px) and (max-width: 1120px){
+/* @media screen and (min-width: 1061px) and (max-width: 1120px){
     .titleDescriptionContainer{
         height: 260px;
     }
@@ -68,4 +69,4 @@
     .titleDescriptionContainer{
         height: 240px;
     }
-}
+} */

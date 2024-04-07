@@ -84,7 +84,7 @@
 
 /* ###############  TABLET VIEW  ############## */
 
-@media screen and (min-width: 767px) and (max-width: 1000px){
+@media screen and (min-width: 767px) and (max-width: 1052px){
 
     .heroContainer{
         flex-wrap: wrap;
@@ -101,9 +101,13 @@
 }
 
 
+
+
+
+
 /* ###############  LAPTOP VIEW  ############## */
 
-@media screen and (min-width: 1001px) and (max-width: 1000px){
+/* @media screen and (min-width: 1001px) and (max-width: 1000px){
 
-}
+} */
 

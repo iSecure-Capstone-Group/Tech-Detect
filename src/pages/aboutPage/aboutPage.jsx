@@ -86,7 +86,7 @@ const AboutUsPage = () => {
 
             <div className={styles.featuresSectionContainer}>
                 <SectionHeading heading="Meet Our Esteemed Team"/>
-                <div className={styles.featuresContainer}>
+                <div className={`${styles.featuresContainer} ${styles.aboutPageFeatures}`}>
                     <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1711516759/Frame_37_1_xqtxoy.svg" featureTitle="Margaret Yvonne " featureDescription="C.E.O"/>
 
                     <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1711516759/Frame_37_2_zzrcqh.svg" featureTitle="Leathia Amanih" featureDescription="Cyber Security lead"/>

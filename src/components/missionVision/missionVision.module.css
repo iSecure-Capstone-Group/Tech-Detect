@@ -15,3 +15,18 @@
 .missionVisionContainer{
     padding: 48px 0 123px 80px;
 }
+
+/* ###############  MOBILE VIEW  ############## */
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .missionVisionContainer{
+        padding: 48px 50px 48px 50px;
+    }
+}
+
+/* ###############  TABLET VIEW  ############## */
+
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .missionVisionContainer{
+        padding: 48px 45px 48px 45px;
+    }
+}

@@ -17,6 +17,10 @@
     /* width: 30%; */
 }
 
+
+
+
+
 .aboutPageFeatureCard{
     display: flex;
     justify-content: space-between;
@@ -46,6 +50,8 @@
     margin-bottom: 21.32px;
 }
 
+
+
 .svgFeaturesContainer{
     display: flex;
     width: 45%;
@@ -56,4 +62,49 @@
     width: 60%;
     margin: auto;
     text-align: center;
+}
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+/* ###############  MOBILE VIEW  ############## */
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .aboutPageFeatureCard{
+        flex-wrap: wrap;
+    }
+
+    .svgFeaturesContainer, .startNowContainer{
+        width: 100%;
+    }
+
+    .svgFeaturesContainer{
+        display: block;
+        margin-top: 36px;
+        
+    }
+
+    .featureIconContainer{
+        
+        width: 80%;
+        margin: auto;
+        margin-bottom: 24px;
+    }
+}
+
+/* ###############  TABLET VIEW  ############## */
+
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .aboutPageFeatureCard{
+        flex-wrap: wrap;
+    }
+    
+    .svgFeaturesContainer, .startNowContainer{
+        width: 100%;
+    }
+    .svgFeaturesContainer{
+        display: flex;
+        gap: 10px;
+        margin-top: 36px;
+        
+    }
+
 }

@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: space-between;
     
+    
 }
 
 .whoToReach{
@@ -16,4 +17,37 @@
 
 .reach{
     font-size: 80px;
+}
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+/* ###############  MOBILE VIEW  ############## */
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .reachCard{
+        width: 30%;
+    }
+
+    .whoToReach{
+        font-size: 16px;
+    }
+
+    .reach{
+        font-size: 40px;
+    }
+}
+
+/* ###############  TABLET VIEW  ############## */
+
+@media screen and (min-width: 767px) and (max-width: 1119px){
+    .reachCard{
+        width: 30%;
+    }
+
+    .whoToReach{
+        font-size: 24px;
+    }
+
+    .reach{
+        font-size: 60px;
+    }
 }
