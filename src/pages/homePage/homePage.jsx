@@ -10,6 +10,7 @@ import Feautures from "../../components/features/features";
 import FAQs from "../../components/faqs/faqs";
 import Review from "../../components/reviews/reviews";
 import Newsletter from "../../components/newsletter/newsletter";
+import withNavigation from "../../components/HOCs/withNavigationBar";
 
 
 const Home = () => {
@@ -110,4 +111,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default withNavigation(Home)

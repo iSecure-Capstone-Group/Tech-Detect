@@ -4,6 +4,8 @@ import SectionHeading from "../../components/sectionHeading/sectionHeading"
 import articleSectionStyles from "../../components/resourceArticle/articleSection.module.css"
 import styles from "../logSignPages/terms.module.css"
 import termstyles from "../logSignPages/terms.module.css"
+import withNavigation from "../../components/HOCs/withNavigationBar"
+
 const DataPrivacyArticle = () => {
     return(
         <>
@@ -51,4 +53,4 @@ const DataPrivacyArticle = () => {
     )
 }
 
-export default DataPrivacyArticle
+export default withNavigation(DataPrivacyArticle)

@@ -13,6 +13,7 @@ import aboutUsStyles from "./aboutPage.module.css"
 import AboutPageFeatureSection from "../../components/aboutPageFeature/aboutPageFeatureSection"
 import OurGoals from "../../components/ourGoals/ourGoals"
 import Newsletter from "../../components/newsletter/newsletter"
+import withNavigation from "../../components/HOCs/withNavigationBar"
 
 const AboutUsPage = () => {
     return(
@@ -108,4 +109,4 @@ const AboutUsPage = () => {
     )
 }
 
-export default AboutUsPage
+export default withNavigation(AboutUsPage)
