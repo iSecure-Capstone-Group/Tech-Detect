@@ -10,6 +10,10 @@
     font-size: 16px;
 }
 
+.hamburgerMenuIcon{
+    display: none;
+}
+
 .navUl{
     width: 68.25%;
 }
@@ -53,5 +57,34 @@
 
 .navUl .navLoginSignupContainer a:hover{
     color: #0D0D0D;
+}
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+/* ###############  MOBILE VIEW  ############## */
+/* @media screen and (min-width: 200px) and (max-width: 768px){ */
+
+@media screen and (max-width: 1253px) {
+    .navUl{
+        display: none;
+    }
+
+    .hamburgerMenuIcon{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1254px) and (max-width: 1400px){
+    .navLogoContainer{
+        width: 20%;
+    }
+    
+    
+    .navHomeAboutFeaturesResourcesContainer{
+        width: 40%;
+    }
+    
+    .navLoginSignupContainer{
+        width: 30%;
+    }
 }
 
