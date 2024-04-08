@@ -1,4 +1,5 @@
 import styles from './footer.module.css'
+import Logo from '../logo'
 import { Router, Route, Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
                 <section className={styles.footerLogoContactNav}>
                     <div className={styles.footerSectionContainer}>
                         <div className={styles.logo}>
-                            <img src={"https://res.cloudinary.com/dbv1y1xey/image/upload/v1711955663/Frame_427321927_mxssut.svg"} alt="Logo" />
+                            <Logo />
 
                             
                         </div>

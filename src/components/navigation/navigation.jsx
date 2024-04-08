@@ -1,4 +1,5 @@
 import styles from "./navigation.module.css"
+import Logo from "../logo";
 import { Link, useLocation } from 'react-router-dom'
 import Home from "../../pages/homePage/homePage";
 import AboutUsPage from "../../pages/aboutPage/aboutPage";
@@ -16,7 +17,7 @@ const Navigation = () => {
       <nav>
         <div className={styles.navContainer}>
             <div className={styles.navLogoContainer}>
-                <img src={"https://res.cloudinary.com/dbv1y1xey/image/upload/v1711955663/Frame_427321927_mxssut.svg"} alt="Logo" />
+                <Logo />
 
                 
             </div>
