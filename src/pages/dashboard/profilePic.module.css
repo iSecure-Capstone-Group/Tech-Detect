@@ -1,0 +1,9 @@
+.ProfilePictureConatainer{
+    width: 48px;
+    height: 48px;
+    
+}
+
+.ProfilePictureConatainer img{
+    border-radius: 50%;
+}

@@ -11,6 +11,7 @@ import FAQs from "../../components/faqs/faqs";
 import Review from "../../components/reviews/reviews";
 import Newsletter from "../../components/newsletter/newsletter";
 import withNavigation from "../../components/HOCs/withNavigationBar";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -26,11 +27,11 @@ const Home = () => {
                 <div className={styles.aboutUsHomeContainer}>
                     <SectionHeading heading="About Us"/>
                     <AboutUs />
-                    <div className={styles.shortYellowButton}>
+                    <Link to="./aboutPage" className={styles.shortYellowButton}>
                         <YellowButton yellowBtn="Get Started" variant="center">
                             <p>Read more</p>
                         </YellowButton>
-                    </div>
+                    </Link>
 
                     <div className={styles.longYellowbutton}>
                         <YellowButton yellowBtn="Get Started" variant="long">

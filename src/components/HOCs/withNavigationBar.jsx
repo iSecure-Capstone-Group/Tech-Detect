@@ -1,5 +1,5 @@
-// withNavigation.js
-import React from 'react';
+
+
 import Navigation from '../navigation/navigation';
 
 const withNavigation = (Component) => {

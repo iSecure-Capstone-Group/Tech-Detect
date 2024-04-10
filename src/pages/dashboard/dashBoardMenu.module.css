@@ -1,0 +1,21 @@
+.dashBoardMenuContainer{
+    
+    color:#FFFFFF;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    gap: 8px;
+    /* text-align: center; */
+    
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    
+    
+
+}
+
+.dashBoardMenuContainer:hover, .dashBoardMenuContainer:active{
+    background-color: #FDAF33;
+    border-radius: 4px;
+    cursor: pointer;
+}
