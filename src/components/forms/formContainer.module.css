@@ -93,13 +93,13 @@
     font-weight: 600;
 }
 
-input[type="checkbox"]{
+/* input[type="checkbox"]{
     appearance: none;
     color: #FDAF33;
     width: 20px;
   height: 20px;
-  /* Add custom styles */
+  Add custom styles
   border: 2px solid #FDAF33;
   border-radius: 4px;
   cursor: pointer;
-}
+} */

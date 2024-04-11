@@ -1,3 +1,4 @@
+import { useState } from "react"
 import styles from "./loginSignUp.module.css"
 import FormContainer from "../../components/forms/formContainers"
 import formContainerStyles from "../../components/forms/formContainer.module.css"
@@ -14,6 +15,27 @@ const initialValues = {
 }
 
 const SignupPage = () => {
+
+    const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSubmit = async (values) => {
+    try {
+      const response = await fetch('your_api_endpoint_here', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+      const data = await response.json();
+      console.log(data); // Handle response from the backend
+      setIsSuccess(true); // Set isSuccess to true if the signup is successful
+      // Optionally, you can redirect the user to a different page here
+    } catch (error) {
+      console.error('Error creating account:', error);
+      // Handle error scenario (e.g., show error message to the user)
+    }
+  };
     // const { values, handleBlur, handleChange, handleSubmit, errors } = useFormik({
     //     initialValues: initialValues,
     //     validationSchema: LoginSignupValidation,
@@ -30,10 +52,15 @@ const SignupPage = () => {
                         <h6 className={formContainerStyles.createAccount}>Create an Account</h6>
                         <p className={formContainerStyles.fillForm}>Please kindly fill in the details to create an account with TechDetect</p>
                     </div>
-
+                    {isSuccess ? (
+                        <div className={formContainerStyles.successMessage}>
+                        Account created successfully! {/* You can customize this message */}
+                        </div>
+                    ) : (
                     <Formik
                      initialValues={initialValues}
                      validationSchema={LoginSignupValidation}
+                     onSubmit={(values) => handleSubmit(values)} // Call the handleSubmit function on form submission
                     >
                         {({errors}) => (
                             <Form className={formContainerStyles.form}>
@@ -87,7 +114,7 @@ const SignupPage = () => {
                                     terms of service</Link></span>
                                 </div>
 
-                                <YellowButton yellowBtn="Get Started" variant="long" >
+                                <YellowButton yellowBtn="Get Started" variant="long" type="submit">
                                     <p>Create Account</p>
                                 </YellowButton>
 
@@ -104,7 +131,7 @@ const SignupPage = () => {
                         )}
                         
                     </Formik>
-
+                    )}
                     
                 </div>
 

@@ -27,12 +27,12 @@
 }
 
 .mainContent{
-    background-color: red;
+    padding: 0 45px 0 325px;
 }
 
 .renderedContent{
     background-color: green;
-    /* font-size: 8px; */
+    
 }
 
 .whoYou{

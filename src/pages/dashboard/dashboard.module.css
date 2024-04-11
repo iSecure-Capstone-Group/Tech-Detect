@@ -1,7 +1,10 @@
 .dashboardContainer{
     /* padding-left: 350px; */
+
+    background-color: #FAFAFA;
 }
 
 .dashboard{
-    padding-left: 350px;
+    padding-left: 325px;
+    /* background-color: #FAFAFA; */
 }
