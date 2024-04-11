@@ -1,0 +1,114 @@
+.dashBoardMenuIntro{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.tableContainer{
+    /* background-color: red; */
+    /* width: 90%;
+    margin: auto; */
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+
+
+
+
+.incidentSumaryContainer, .incidentSummary{
+    display: flex;
+    justify-content: space-between;
+}
+
+.incidentSumaryContainer{
+    margin-bottom: 32px;
+}
+
+.incidentSummary{
+    font-size: 20px;
+    font-weight: 600;
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+
+.incidentSummaryCard{
+    width: 31%;
+}
+
+.incidentSummaryVariantToggle{
+    padding: 23.5px 20px;
+    border-radius: 4px;
+}
+
+.incidentSummaryVariantToggle[incidentSummary="activeIncidents"]{
+    background-color: #FFD7D7;
+    color: #DA2121;
+}
+
+.incidentSummaryVariantToggle[incidentSummary="resolvedIncidents"]{
+    background-color: #E4FFEF;
+    color: #00933B;
+}
+
+.incidentSummaryVariantToggle[incidentSummary="totalIncidents"]{
+    background-color: #E9E9E9;
+    color: #121212;
+}
+
+tr{
+    
+    
+    /* background-color: blue; */
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+th, td{
+    
+    text-align: left;
+    /* border: 1px solid yellow; */
+    padding: 16px 0 16px 7px;
+    width: 14.3%;
+    background-color: #E9E9E9;
+    
+}
+
+th{
+    
+    font-size: 16px;
+    font-weight: 600;
+}
+
+td{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E9E9E9;
+    font-size: 14px;
+}
+
+
+.tableContainer table{
+    width: 100%;
+}
+
+.status[statusResolved="resolved"]{
+    border: 1px solid #00933B;
+    padding: 2px 4px;
+    color: #00933B;
+    background-color: #E4FFEF;
+    border-radius: 4px;
+}
+.status[statusResolved="inProgress"]{
+    border: 1px solid #FFA500;
+    padding: 2px 4px;
+    color: #FFA500;
+    background-color: #FFF7EB;
+    border-radius: 4px;
+}
+
+.action{
+    padding: 2px 4px;
+    color: #0D0D0D;
+    background-color: #FDAF33;
+    border-radius: 4px;
+}
