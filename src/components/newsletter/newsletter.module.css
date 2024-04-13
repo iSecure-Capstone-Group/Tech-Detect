@@ -1,39 +1,77 @@
-.newsletterContainer{
+.newsletterContainer {
     text-align: center;
-    font-family: 18px;
-    font-family: "Montserrat", sans-serif; 
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
 }
 
-.subscribeFormContainer{
-    width: 40%;
-    margin: auto;
-    border: 0.5px solid #989898;
-    
+.newsletterInstruction {
+    margin: 24px 0 48px;
+}
+
+.subscribeFormContainer {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
     display: flex;
-    height: 100%;
-
+    border: 0.5px solid #989898;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    align-items: center;
+    padding: 0; /* No padding by default, suitable for small screens */
 }
 
-.subscribeForm{
-    width: 80%;
-    
-}
-.subscribeButton{
-    width: 20%;
-    height: 100%;
-    background-color: #FDAF33;
-}
-.subscribeForm,.subscribeButton button{
+.subscribeForm {
+    flex-grow: 1;
     outline: none;
     border: none;
-    padding: 16px 8px;
-    background-color: transparent;
+    padding: 8px 12px;
+    background-color: #FFFFFF;
+    color: #333;
     font-size: 16px;
-    
-
+    margin-right: 0; /* No margin on the right for small screens */
 }
 
-.newsletterInstruction{
-    margin: 24px 0 64px 0;
+.subscribeButton {
+    padding: 0; /* No padding by default for small screens */
 }
 
+.subscribeButton button {
+    min-width: 100px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #FDAF33;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.subscribeButton button:hover {
+    background-color: #E8962C;
+}
+
+@media (min-width: 768px) { /* Medium and larger screens */
+    .subscribeFormContainer {
+        padding: 0 10px; /* Adding padding inside the container */
+    }
+
+    .subscribeForm {
+        margin-right: 10px; /* Space between the input and button on larger screens */
+    }
+
+    .subscribeButton {
+        padding: 0 10px; /* Padding around the button to prevent touching the input */
+    }
+}
+
+@media (max-width: 768px) { /* Adjustments specific to small screens */
+    .subscribeFormContainer {
+        flex-direction: column; /* Stack input above button */
+        height: auto; /* Adjust height dynamically */
+    }
+
+    .subscribeForm, .subscribeButton {
+        width: 100%; /* Full width for both elements */
+        margin: 5px 0; /* Vertical spacing */
+    }
+}

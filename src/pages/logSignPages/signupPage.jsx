@@ -6,6 +6,9 @@ import { useFormik, Formik, Form, Field } from "formik"
 import YellowButton from "../../components/buttons/yellowButton"
 import { Routes, Route, Link } from "react-router-dom"
 import LoginPage from "./loginPage"
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
+
 const initialValues = {
     name: '',
     email: '',
@@ -21,6 +24,31 @@ const SignupPage = () => {
     //         console.log(values)
     //     }
     // })
+    const navigate = useNavigate()
+
+    const handleSubmit = async (values, { setErrors }) => {
+        try {
+            const response = await axios.post('http://localhost:3001/auth/register', values);
+            console.log(response.data); // Handle response from backend
+            // Redirect to login page after successful registration
+            navigate('/loginPage');
+        } catch (error) {
+            if (error.response) {
+                // Server responded with a status code other than 2xx
+                console.error('Error registering user:', error.response.data);
+                setErrors(error.response.data);
+            } else if (error.request) {
+                // The request was made but no response was received
+                console.error('Error making request:', error.request);
+            } else {
+                // Something happened in setting up the request that triggered an error
+                console.error('Error:', error.message);
+            }
+        }
+    }
+
+
+
     return(
         <>
             <div className={formContainerStyles.formImageContainer}>
@@ -34,6 +62,7 @@ const SignupPage = () => {
                     <Formik
                      initialValues={initialValues}
                      validationSchema={LoginSignupValidation}
+                     onSubmit={handleSubmit}
                     >
                         {({errors}) => (
                             <Form className={formContainerStyles.form}>
@@ -87,7 +116,7 @@ const SignupPage = () => {
                                     terms of service</Link></span>
                                 </div>
 
-                                <YellowButton yellowBtn="Get Started" variant="long" >
+                                <YellowButton yellowBtn="Get Started" variant="long" type="submit">
                                     <p>Create Account</p>
                                 </YellowButton>
 

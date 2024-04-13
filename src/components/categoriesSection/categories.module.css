@@ -1,46 +1,73 @@
-.imageBackground{
-    
+.categoriesImageContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-around; /* Better spacing management */
+    padding: 40px 80px;
+    gap: 20px; /* Adds space between items */
+}
+
+.imageBackground {
     position: relative;
-    width: 100%;
+    width: 21%; /* Set width for each item */
     height: 205px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center; /* Centers the background image */
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.imageBackground p{
+.imageBackground:hover {
+    transform: scale(1.05); /* Slight scale up on hover */
+}
+
+.imageBackground p {
     font-size: 24px;
     font-weight: 600;
-    font-family: "Montserrat", sans-serif;  
+    font-family: "Montserrat", sans-serif;
     color: #FFFFFF;
-    width: 60%;
+    width: 60%; /* Responsive text width */
     text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Text shadow for better readability */
 }
 
-
-.categoriesImageContainer{
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 80px;
-}
-.image1{
+/* Specific background images for each category */
+.image1 {
     background-image: url("https://res.cloudinary.com/dbv1y1xey/image/upload/v1711713682/Frame_626447_jedxdv.svg");
 }
-.image2{
+
+.image2 {
     background-image: url("https://res.cloudinary.com/dbv1y1xey/image/upload/v1711713678/Frame_626448_celhzl.svg");
 }
-.image3{
+
+.image3 {
     background-image: url("https://res.cloudinary.com/dbv1y1xey/image/upload/v1711713691/Frame_626449_lxcwes.svg");
 }
-.image4{
+
+.image4 {
     background-image: url("https://res.cloudinary.com/dbv1y1xey/image/upload/v1711713696/Frame_626450_ggyhzb.svg");
 }
 
-.image1, .image2, .image3, .image4{
-    width: 21%;
+@media (max-width: 768px) {
+    .categoriesImageContainer {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    .imageBackground {
+        width: 48%; /* Each item takes almost half the screen width */
+        height: 150px; /* Reduced height for smaller screens */
+        font-size: 20px; /* Reduced font size for text */
+    }
 }
 
+@media (max-width: 480px) {
+    .imageBackground {
+        width: 100%; /* Full width on very small screens */
+    }
+
+    .imageBackground p {
+        font-size: 18px; /* Even smaller font size for very small screens */
+    }
+}

@@ -6,6 +6,7 @@ import { Routes, Route, Link } from "react-router-dom"
 import YellowButton from "../../components/buttons/yellowButton"
 import styles from "./loginSignUp.module.css"
 import ForgotPasswordPage from "./forgotPassword"
+import axios from 'axios'
 
 const initialValues = {
     name: '',
@@ -13,7 +14,32 @@ const initialValues = {
     password: '',
     confirmpassword: '',
 }
+
+
 const LoginPage = () => {
+
+    const handleSubmit = async (values) => {
+        try {
+            const response = await axios.post('http://localhost:3001/auth/login', values);
+            console.log(response.data); // Handle response from the backend
+            // Redirect user or perform other actions based on the response
+        } catch (error) {
+            if (error.response) {
+                // The request was made and the server responded with a status code
+                // that falls out of the range of 2xx
+                console.error('Error:', error.response.data);
+            } else if (error.request) {
+                // The request was made but no response was received
+                console.error('No response received:', error.request);
+            } else {
+                // Something happened in setting up the request that triggered an Error
+                console.error('Request setup error:', error.message);
+            }
+        }
+    };
+    
+
+
     return(
         <>
         <div className={formContainerStyles.formImageContainer}>
@@ -39,6 +65,7 @@ const LoginPage = () => {
             <Formik
                      initialValues={initialValues}
                      validationSchema={LoginSignupValidation}
+                     onSubmit={handleSubmit}
                     >
                         {({errors}) => (
                             <Form className={formContainerStyles.form}>
@@ -75,7 +102,7 @@ const LoginPage = () => {
                                     </span>
                                 </div>
 
-                                <YellowButton yellowBtn="Get Started" variant="long" >
+                                <YellowButton yellowBtn="Get Started" variant="long" type="submit">
                                     <p>Login</p>
                                 </YellowButton>
 

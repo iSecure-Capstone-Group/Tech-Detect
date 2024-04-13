@@ -1,17 +1,18 @@
-import styles from "./resourceHero.module.css"
+import React from 'react';
+import styles from "./resourceHero.module.css";
 
-const ResourceHero = ({ children, variant }) => {
-    return(
-        <>
-            <div className={styles.resourceHeroContainer} resourceSecondHero={variant}>
-                {children}
-                {/* <div className={styles.resourceHeroOverlay}>
-                    <h3 className={styles.resourceHeroText}>{heroText}</h3>
-                </div> */}
-
+const ResourceHero = ({ children, variant, title }) => {
+    return (
+        <div className={styles.resourceHeroContainer} resourceSecondHero={variant}>
+            <div className={styles.resourceHeroOverlay}> 
+                {title && (
+                    <h1 className={styles.resourceHeroText}>{title}</h1>
+                )}
             </div>
-        </>
-    )
+            {children}
+        </div>
+    );
 }
 
-export default ResourceHero
+export default ResourceHero;
+
