@@ -1,0 +1,47 @@
+
+.realTimeContainer{
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 50px;
+    background-color: yellow;
+    font-size: 14px;
+}
+
+.threatDetectionDates{
+    font-size: 16px;
+    background-color: #FEE6C0;
+    display: inline;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.threatStatusHeading{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0 4px 16px;
+}
+
+.threatStatus{
+    font-weight: 600;
+}
+
+.collapsedText, .expandedText > p{
+    margin: 0 16px 16px 45px;
+    line-height: 20px;
+}
+
+.learnMore{
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 12px;
+}
+
+.successful{
+    color: #346615;
+    display: block;
+}
+
+.threatStatusUl{
+    margin-left: 45px;
+}

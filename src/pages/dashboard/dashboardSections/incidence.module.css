@@ -105,6 +105,39 @@ td{
     background-color: #FFF7EB;
     border-radius: 4px;
 }
+.status[statusResolved="realTimeResolved"]{
+    border: 1px solid #00933B;
+    padding: 2px 4px;
+    color: #546E7A;
+    background-color: #E4FFEF;
+    border-radius: 4px;
+    display: block;
+}
+
+.status[statusResolved="realTimeThreat"]{
+    border: 1px solid #FF9800;
+    padding: 2px 4px;
+    color: #546E7A;
+    background-color: #FFF3E0;
+    border-radius: 4px;
+    display: block;
+}
+.status[statusResolved="realTimeAuthFail"]{
+    border: 1px solid #F44336;
+    padding: 2px 4px;
+    color: #546E7A;
+    background-color: #FFEBEE;
+    border-radius: 4px;
+    display: block;
+}
+.status[statusResolved="realTimeFilterAlert"]{
+    border: 1px solid #2196F3;
+    padding: 2px 4px;
+    color: #546E7A;
+    background-color: #E3F2FD;
+    border-radius: 4px;
+    display: block;
+}
 
 .action{
     padding: 2px 4px;
@@ -112,3 +145,4 @@ td{
     background-color: #FDAF33;
     border-radius: 4px;
 }
+
