@@ -6,6 +6,10 @@ import { Routes, Route, Link } from "react-router-dom"
 import YellowButton from "../../components/buttons/yellowButton"
 import styles from "./loginSignUp.module.css"
 import LoginPage from "./loginPage"
+import { useState } from "react"
+import ResetPasswordModal from "../../components/modals/resetPasswordModal"
+import Logo from "../../components/logo"
+import resetStyles from "../../components/modals/modals.module.css"
 
 const initialValues = {
     name: '',
@@ -14,6 +18,8 @@ const initialValues = {
     confirmpassword: '',
 }
 const ForgotPasswordPage = () => {
+
+
     return(
         <>
         <div className={formContainerStyles.formImageContainer}>
@@ -47,12 +53,64 @@ const ForgotPasswordPage = () => {
                                 
 
 
-                                
+                                {/* <MyModal >
+                                    <YellowButton yellowBtn="Get Started" variant="long" >
+                                        Reset Password
+                                    </YellowButton>
+                                </MyModal> */}
 
-                                <YellowButton yellowBtn="Get Started" variant="long" >
-                                    <p>Reset Password</p>
-                                </YellowButton>
-                                
+                                {/* <Modal yellowBtnTitle="Reset Password">
+
+                                    
+                                    <YellowButton yellowBtn="Get Started" variant="long" >
+                                        Reset Password
+                                    </YellowButton>
+                                </Modal> */}
+
+                                <ResetPasswordModal
+                                    modalContent={[
+                                        <div className={formContainerStyles.form}>
+                                            <div key="1" className={formContainerStyles.modalLogo}><Logo /></div>
+                                            <div className={formContainerStyles.formIntroContainer}>
+                                                <h6 className={formContainerStyles.createAccount}>Reset Password?</h6>
+                                                <p className={formContainerStyles.fillForm}>Please fill in the details below to reset your password .</p>
+
+                                            </div>
+                                            
+                                                
+                                            <div>
+                                                <label htmlFor="password" className={formContainerStyles.formLabel}>Password</label>
+                                                <Field type="password" name="password" placeholder="******************" className={formContainerStyles.formInput}></Field>
+                                                {/* <input
+                                                    type="password" 
+                                                    name="password"
+                                                    onChange={handleChange}
+                                                    value={values.password}
+                                                    placeholder="******************"
+                                                /> */}
+                                                <div className={formContainerStyles.formErrors}>{errors.password}</div>
+
+                                                <label htmlFor="confirmpassword" className={formContainerStyles.formLabel}>Confirm Password</label>
+                                                <Field type="password" name="confirmpassword" placeholder="******************" className={formContainerStyles.formInput}></Field>
+                                                {/* <input
+                                                    type="password"
+                                                    name="confirmpassword" 
+                                                    onChange={handleChange}
+                                                    value={values.confirmpassword}
+                                                    placeholder="******************"
+                                                /> */}
+                                                <div className={formContainerStyles.formErrors}>{errors.confirmpassword}</div>
+                                                <div key="4">
+                                                <YellowButton yellowBtn="Get Started" variant="long" >
+                                                    <Link to="/loginPage">Get Started</Link>
+                                                </YellowButton>
+                                                </div>,
+                                            </div>
+                                            
+                                        </div>
+                                        // Add more elements as needed
+                                    ]}
+                                />
                                 <Link to="/loginPage" className={styles.bacButton}>Back</Link>
 
                                 

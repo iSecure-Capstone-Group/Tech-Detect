@@ -6,6 +6,8 @@ import { Routes, Route, Link } from "react-router-dom"
 import YellowButton from "../../components/buttons/yellowButton"
 import styles from "./loginSignUp.module.css"
 import ForgotPasswordPage from "./forgotPassword"
+import Dashboard from "../dashboard/dashboard"
+
 
 const initialValues = {
     name: '',
@@ -76,8 +78,16 @@ const LoginPage = () => {
                                 </div>
 
                                 <YellowButton yellowBtn="Get Started" variant="long" >
-                                    <p>Login</p>
+                                    <Link to="/dashboard">Login</Link>
                                 </YellowButton>
+
+                                {/* <Modal yellowBtnTitle="Reset Password">
+
+                                                                    
+                                <YellowButton yellowBtn="Get Started" variant="long" >
+                                    Login
+                                </YellowButton>
+                                </Modal> */}
 
                                 <div className={formContainerStyles.createAccountLogin}>
                                     <p>Not registered yet?</p>
