@@ -1,6 +1,7 @@
 // mockApi.js
 const mockUserData = {
     id: 1,
+    firstname: "Blessing",
     username: 'Blessing Shelly',
     email: 'BlessingShelly@gmail.com',
     profilePicture: 'https://res.cloudinary.com/dbv1y1xey/image/upload/v1713143230/Avatar_hmbnjv.svg',
