@@ -55,7 +55,7 @@
     color: #121212;
 }
 
-tr{
+.tableContainer > tr{
     
     
     /* background-color: blue; */
