@@ -9,6 +9,7 @@ import LoginPage from "./loginPage"
 import { useState } from "react"
 import ResetPasswordModal from "../../components/modals/resetPasswordModal"
 import Logo from "../../components/logo"
+import LogoOnly from "../../components/logoOnly"
 import resetStyles from "../../components/modals/modals.module.css"
 
 const initialValues = {
@@ -70,7 +71,7 @@ const ForgotPasswordPage = () => {
                                 <ResetPasswordModal
                                     modalContent={[
                                         <div className={formContainerStyles.form}>
-                                            <div key="1" className={formContainerStyles.modalLogo}><Logo /></div>
+                                            <div key="1" className={formContainerStyles.modalLogo}><LogoOnly /></div>
                                             <div className={formContainerStyles.formIntroContainer}>
                                                 <h6 className={formContainerStyles.createAccount}>Reset Password?</h6>
                                                 <p className={formContainerStyles.fillForm}>Please fill in the details below to reset your password .</p>

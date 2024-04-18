@@ -66,15 +66,16 @@ const SimpleBarChart = () => {
   // static demoUrl = "https://codesandbox.io/s/bar-chart-has-no-padding-jphoc";
 
   return (
+    <ResponsiveContainer height={300}>
     <BarChart
-      width={600}
       height={300}
+      width={600}
       data={barData}
       margin={{
-        top: 5,
-        right: 50,
-        left: 20,
-        bottom: 5,
+        top: 10,
+        right: 10,
+        left: 10,
+        bottom: 10,
       }}
       barSize={20}
     >
@@ -85,6 +86,7 @@ const SimpleBarChart = () => {
       <CartesianGrid strokeDasharray="3 3" />
       <Bar dataKey="Threats" fill="#FDAF33" background={{ fill: "#eee" }} />
     </BarChart>
+    </ResponsiveContainer>
   );
 };
 

@@ -15,7 +15,7 @@ const Hero = ({ heroHead, heroText, image, variant }) =>  {
                     <p className={styles.heroText}>{heroText}</p>
 
                     {/* Remove this later and link the dashboard properly through login */}
-                    <Link to="/dashboard" className={styles.yellowButtonContainer} variantWhite={variant}>
+                    <Link to="/signupPage" className={styles.yellowButtonContainer} variantWhite={variant}>
                         <YellowButton yellowBtn="Get Started" variant="left">
                             <p>Get started</p>
                         </YellowButton>

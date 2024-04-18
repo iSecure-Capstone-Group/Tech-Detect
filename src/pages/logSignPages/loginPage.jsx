@@ -7,6 +7,8 @@ import YellowButton from "../../components/buttons/yellowButton"
 import styles from "./loginSignUp.module.css"
 import ForgotPasswordPage from "./forgotPassword"
 import Dashboard from "../dashboard/dashboard"
+import { useNavigate } from 'react-router-dom';
+
 
 
 const initialValues = {
@@ -16,6 +18,29 @@ const initialValues = {
     confirmpassword: '',
 }
 const LoginPage = () => {
+    const navigate = useNavigate();
+
+    
+
+    const handleSubmit = async (values) => {
+        try {
+            const response = await fetch('your_login_api_endpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(values),
+            });
+            const data = await response.json();
+            console.log(data); // Handle response from the backend
+
+            // Optionally, you can redirect the user to a different page after successful login
+            navigate('/dashboard');
+        } catch (error) {
+            console.error('Error logging in:', error);
+            // Handle error scenario (e.g., show error message to the user)
+        }
+    };
     return(
         <>
         <div className={formContainerStyles.formImageContainer}>
@@ -41,6 +66,7 @@ const LoginPage = () => {
             <Formik
                      initialValues={initialValues}
                      validationSchema={LoginSignupValidation}
+                     onSubmit={(values) => handleSubmit(values)}
                     >
                         {({errors}) => (
                             <Form className={formContainerStyles.form}>
@@ -78,7 +104,7 @@ const LoginPage = () => {
                                 </div>
 
                                 <YellowButton yellowBtn="Get Started" variant="long" >
-                                    <Link to="/dashboard">Login</Link>
+                                    <button type="submit" >Login</button>
                                 </YellowButton>
 
                                 {/* <Modal yellowBtnTitle="Reset Password">

@@ -67,7 +67,7 @@ const SimpleAreaChart = () => {
 
   
     return (
-      
+      <ResponsiveContainer height={150}>
         <AreaChart
           width={850}
           height={150}
@@ -85,6 +85,7 @@ const SimpleAreaChart = () => {
           <Tooltip />
           <Area type="monotone" dataKey="Performance" stroke="#8884d8" fill="#FFF7EB" />
         </AreaChart>
+      </ResponsiveContainer>
     
     );
   }

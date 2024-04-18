@@ -10,6 +10,7 @@ import LoginPage from "./loginPage"
 import SuccessfulACcount from "../../components/modals/createAccountSuccess"
 import Logo from "../../components/logo"
 import resetStyles from "../../components/modals/modals.module.css"
+import LogoOnly from "../../components/logoOnly"
 
 
 const initialValues = {
@@ -119,13 +120,13 @@ const SignupPage = () => {
                                     terms of service</Link></span>
                                 </div>
 
-                                {/* <YellowButton yellowBtn="Get Started" variant="long" type="submit">
-                                    <p>Create Account</p>
-                                </YellowButton> */}
-                                <SuccessfulACcount
+                                <YellowButton yellowBtn="Get Started" variant="long">
+                                    <button type="submit">Create Account</button>
+                                </YellowButton>
+                                {/* <SuccessfulACcount
                                     modalContent={[
                                         <div className={resetStyles.contents}>
-                                            <div key="1"><Logo /></div>,
+                                            <div key="1"><LogoOnly /></div>,
                                             <p key="2"><svg width="121" height="121" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60.5 110.5c27.5 0 50-22.5 50-50s-22.5-50-50-50-50 22.5-50 50 22.5 50 50 50Z" stroke="#007300" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M39.25 60.5 53.4 74.65l28.35-28.3" stroke="#007300" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></p>,
                                             <h5 key="3">Congratulations</h5>,
                                             <p>You have successfully created your account</p>,
@@ -135,9 +136,9 @@ const SignupPage = () => {
                                                 </YellowButton>
                                             </div>,
                                         </div>
-                                        // Add more elements as needed
+                                        
                                     ]}
-                                />
+                                /> */}
 
                                 <div className={formContainerStyles.createAccountLogin}>
                                     <p>Already have an account?</p>

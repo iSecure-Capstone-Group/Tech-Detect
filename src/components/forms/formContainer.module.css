@@ -34,6 +34,10 @@
     font-size: 16px;
 }
 
+.fillForm{
+    text-align: center;
+}
+
 .formInput{
     width: 100%;
     padding: 16px 16px 16px 8px;
@@ -103,3 +107,8 @@
   border-radius: 4px;
   cursor: pointer;
 } */
+
+.modalLogo{
+    text-align: center;
+    margin-bottom: 32px;
+}
