@@ -14,6 +14,13 @@
     border-radius: 4px;
 }
 
+.titleDescriptionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 250px; */
+}
+
 .featureTitle{
     font-size: 24px;
     font-weight: bold;
@@ -25,3 +32,41 @@
     font-size: 16px;
     line-height: 22.4px;
 }
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .featureCardContainer{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 769px) and (max-width: 1253px){
+    .featureCardContainer{
+        width: 46%;
+        margin-top: 20px;
+        
+    }
+}
+
+/* ###############  LAPTOP VIEW  ############## */
+/* @media screen and (min-width: 1254px) and (max-width: 1400px){
+    .titleDescriptionContainer{
+        height: 200px;
+        background-color: red;
+    }
+} */
+
+/* @media screen and (min-width: 1061px) and (max-width: 1120px){
+    .titleDescriptionContainer{
+        height: 260px;
+    }
+}
+@media screen and (min-width: 1121px) and (max-width: 1400px){
+    .titleDescriptionContainer{
+        height: 240px;
+    }
+} */

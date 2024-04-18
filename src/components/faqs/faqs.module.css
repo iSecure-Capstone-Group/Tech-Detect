@@ -32,3 +32,26 @@
     border-radius: 4px;
     padding: 8px 16px;
 }
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+/* ###############  MOBILE VIEW  ############## */
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .QuestionsAndAnswersContainer{
+        width: 85%; 
+    }
+}
+
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .QuestionsAndAnswersContainer{
+        width: 80%; 
+    }
+}
+
+/* ###############  LAPTOP VIEW  ############## */
+@media screen and (min-width: 1001px) and (max-width: 1280px){
+    .QuestionsAndAnswersContainer{
+        width: 60%; 
+    }
+}

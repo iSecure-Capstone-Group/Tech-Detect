@@ -10,6 +10,8 @@ import Feautures from "../../components/features/features";
 import FAQs from "../../components/faqs/faqs";
 import Review from "../../components/reviews/reviews";
 import Newsletter from "../../components/newsletter/newsletter";
+import withNavigation from "../../components/HOCs/withNavigationBar";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -25,15 +27,23 @@ const Home = () => {
                 <div className={styles.aboutUsHomeContainer}>
                     <SectionHeading heading="About Us"/>
                     <AboutUs />
-                    <YellowButton yellowBtn="Get Started" variant="center">
-                        <p>Read more</p>
-                    </YellowButton>
+                    <Link to="./aboutPage" className={styles.shortYellowButton}>
+                        <YellowButton yellowBtn="Get Started" variant="center">
+                            <p>Read more</p>
+                        </YellowButton>
+                    </Link>
+
+                    <div className={styles.longYellowbutton}>
+                        <YellowButton yellowBtn="Get Started" variant="long">
+                            <p>Read more</p>
+                        </YellowButton>
+                    </div>
                 </div>
 
                 <div className={styles.featuresSectionContainer}>
                     <SectionHeading heading="Our Unique Features"/>
                     <div className={styles.featuresContainer}>
-                        <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820650/Frame_37_qwsqu0.svg" featureTitle="Incident Detection and Alerting" featureDescription="Our incident detection system constantly monitors all your digital assets for any phishing, unauthorized access attempts"/>
+                        <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820650/Frame_37_qwsqu0.svg" featureTitle="Incident Detection" featureDescription="Our incident detection system constantly monitors all your digital assets for any phishing, unauthorized access attempts"/>
 
                         <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820648/Frame_39_s6zzsi.svg" featureTitle="Automated Incident Triage" featureDescription="Efficiently categorize security incidents for rapid response, minimizing disruptions to your digital assets and operations."/>
 
@@ -41,11 +51,6 @@ const Home = () => {
 
                         <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1710820683/Frame_40_iwfmuo.svg" featureTitle="Multi-Factor Authentication " featureDescription="Our MFA feature adds an extra layer of protection against unauthorized access to your sensitive data and systems."/>
                     </div>
-                </div>
-
-                <div className={styles.faqsContainer}>
-                    <SectionHeading heading="Frequently Asked Questions"/>
-                    <FAQs />
                 </div>
 
                 <div className={styles.reviewContainer}>
@@ -75,12 +80,25 @@ const Home = () => {
                     </div>
                 </div>
 
+                <div className={styles.faqsContainer}>
+                    <SectionHeading heading="Frequently Asked Questions"/>
+                    <FAQs />
+                </div>
+
                 <div className={styles.contactSection}>
                     <SectionHeading heading="Contact Us"/>
                     <Contact />
-                    <YellowButton yellowBtn="Get Started" variant="center">
-                        <p>Read more</p>
-                    </YellowButton>
+                    <div className={styles.shortYellowButton}>
+                        <YellowButton yellowBtn="Get Started" variant="center">
+                            <p>Submit</p>
+                        </YellowButton>
+                    </div>
+
+                    <div className={styles.longYellowbutton}>
+                        <YellowButton yellowBtn="Get Started" variant="long">
+                            <p>Submit</p>
+                        </YellowButton>
+                    </div>
                 </div>
 
                 <div className={styles.subscribeNewsletter}>
@@ -94,4 +112,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default withNavigation(Home)

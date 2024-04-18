@@ -1,0 +1,102 @@
+.profileContainer{
+    width: 90%;
+}
+
+.profileInfo{
+    color: #FEC976;
+}
+
+.role{
+    color: #FDAF33;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 4px 13.5px;
+    border: 1px solid #FDAF33;
+    
+}
+
+.profileAndSettingContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37.5px;
+}
+
+.profileEditIconContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profilePictureContainer{
+    text-align: center;
+}
+
+.profileDataContainer, .settingsContainer{
+    width: 48%;
+}
+
+.settingsContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 50vh;
+}
+
+.profileDataContainer{
+    background-color: #E9E9E9;
+    padding: 32px 24px;
+    border-radius: 4px;
+}
+
+/* .nameRoleContainer > span{
+    display: block;
+    background-color: yellow;
+} */
+
+
+.nameRoleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.userDataContainer{
+    margin-top: 28px;
+}
+
+.dataContainer{
+    display: flex;
+    justify-content: space-between;
+    line-height: 36px;
+    
+}
+
+.dataTitle{
+    font-family: "Open Sans", sans-serif;  
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.data{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.activityLogContainer  table  th, .activityLogContainer  table  td {
+    background-color: transparent;
+    text-align: center;
+}
+
+.activitySuccess{
+    color: #00933B;
+}
+
+.logTitle{
+    font-family: "Open Sans", sans-serif; 
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}

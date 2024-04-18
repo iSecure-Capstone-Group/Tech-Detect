@@ -23,7 +23,54 @@
     margin-bottom: 16px;
 }
 
+.reviewRateContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+    height: 230px;
+}
+
 .reviewerReview{
     line-height: 22.4px;
     margin-bottom: 46px;
+}
+
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+/* ###############  MOBILE VIEW  ############## */
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+
+    .reviewCardContainer{
+        width: 100%;
+    }
+    .reviewRateContainer{
+        /* display: block; */
+        height: 280px;
+    }
+    .reviewerReview{
+        margin-bottom: 24px;
+        /* background-color: red; */
+    }
+}
+
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .reviewCardContainer{
+        width: 46%;
+        
+    }
+
+    .reviewCardContainer:last-child{
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1193px){
+    .reviewRateContainer{
+        /* display: block; */
+        height: 300px;
+    }
 }

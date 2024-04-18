@@ -1,0 +1,63 @@
+.tableContainer{
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.colorTable{
+    width: 100%;
+    
+}
+
+.threatTableContainer{
+    display: flex;
+}
+
+.tableData{
+    /* border: 1px solid red; */
+    border-radius: 4px;
+    border: none;
+}
+
+.sidetexxt{
+    writing-mode: vertical-rl; /* Vertical, right-to-left */
+  text-orientation: sideways;
+    text-align: center;
+}
+
+.greenData{
+    background-color: #34FF85;
+}
+
+.yellowData{
+    background-color: #FFA500;
+}
+
+.redData{
+    background-color: #DA2121;
+}
+
+.categoriesContainer .tableData{
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 0;
+}
+
+.severity{
+    font-size: 12px;
+}
+
+.categories{
+    text-align: center;
+    margin-top: 5px;
+}
+/* .white-col {
+    background-color: white;
+  }
+  
+  .gray-col {
+    background-color: gray;
+  }
+  
+  .yellow-col {
+    background-color: yellow;
+  } */

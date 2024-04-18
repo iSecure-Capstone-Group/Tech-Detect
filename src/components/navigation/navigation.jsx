@@ -1,4 +1,5 @@
 import styles from "./navigation.module.css"
+import Logo from "../logo";
 import { Link, useLocation } from 'react-router-dom'
 import Home from "../../pages/homePage/homePage";
 import AboutUsPage from "../../pages/aboutPage/aboutPage";
@@ -16,7 +17,7 @@ const Navigation = () => {
       <nav>
         <div className={styles.navContainer}>
             <div className={styles.navLogoContainer}>
-                <img src={"https://res.cloudinary.com/dbv1y1xey/image/upload/v1711955663/Frame_427321927_mxssut.svg"} alt="Logo" />
+                <Logo />
 
                 
             </div>
@@ -39,6 +40,10 @@ const Navigation = () => {
                     )} */}
                 </div>
             </ul>
+
+            <div className={styles.hamburgerMenuIcon}>
+                <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.234 12h18M3.234 6h18M3.234 18h18" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
         </div>
       </nav>
     );

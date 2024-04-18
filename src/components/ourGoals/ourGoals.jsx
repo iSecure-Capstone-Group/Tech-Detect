@@ -20,7 +20,7 @@ const OurGoals = ({ targetReach, unit, whoToReach }) => {
 
   return (
     <div className={styles.reachCard}>
-      <p>{whoToReach}</p>
+      <p className={styles.whoToReach}>{whoToReach}</p>
       <p className={styles.reach}>{currentReach}{unit}</p>
     </div>
   );

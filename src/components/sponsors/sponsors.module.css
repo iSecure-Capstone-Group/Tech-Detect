@@ -4,3 +4,48 @@
     padding: 40px;
 }
 
+.sponsorLogoContainer{
+    width: 13%;
+    text-align: center;
+}
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+/* ###############  MOBILE VIEW  ############## */
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .sponosorsLogos{
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+
+    .sponsorLogoContainer{
+        width: 45%;
+        /* text-align: center; */
+        margin-bottom: 24px;
+    }
+
+}
+
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 767px) and (max-width: 1349px){
+    .sponosorsLogos{
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+
+    .sponsorLogoContainer{
+        width: 30%;
+        /* text-align: center; */
+        margin-bottom: 30px;
+    }
+}
+
+/* ###############  LAPTOP VIEW  ############## */
+/* @media screen and (min-width: 1001px) and (max-width: 1349px){
+    .sponsorLogoContainer{
+        width: 10%;
+        text-align: center;
+    }
+} */
+

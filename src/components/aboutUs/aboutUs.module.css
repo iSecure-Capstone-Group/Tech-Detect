@@ -5,3 +5,20 @@
     line-height: 22.4px;
     padding: 40px 80px 32px 80px;
 }
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+/* ###############  MOBILE VIEW  ############## */
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .aboutUsHome{
+        padding: 24px 24px 32px 24px;
+    }
+    
+}
+
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 767px) and (max-width: 1000px){
+
+}
+

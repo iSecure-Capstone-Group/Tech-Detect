@@ -9,7 +9,11 @@ import ResourcePage from './pages/resources/resourcePage';
 import ForgotPasswordPage from './pages/logSignPages/forgotPassword';
 import Terms from './pages/logSignPages/terms';
 import DataPrivacyArticle from './pages/resources/dataPrivacyArticle';
+import Dashboard from './pages/dashboard/dashboard';
+// import Overview from './pages/dashboard/dashboardSections/overview';
+// import incidence from './pages/dashboard/dashboardSections/incidence';
 import { Routes, Route } from 'react-router-dom';
+// import Incidence from './pages/dashboard/dashboardSections/incidence';
 
 
 const App = () => {
@@ -17,7 +21,7 @@ const App = () => {
     
     <>
       
-      <Navigation /> {/* Always render navigation */}
+      {/* <Navigation /> Always render navigation */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutPage" element={<AboutUsPage />} />
@@ -28,6 +32,9 @@ const App = () => {
         <Route path="/forgotPassword" element={<ForgotPasswordPage />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/signupPage" element={<SignupPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        {/* <Route path="/overview" element={<Overview />} /> */}
+        {/* <Route path="/incidence" element={<Incidence />} /> */}
       </Routes>
       
     </>

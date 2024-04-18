@@ -1,0 +1,38 @@
+.modal{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent{
+    background-color: white;
+    width: 40%;
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.modalContentContainer{
+    
+    /* background-color: red; */
+}
+
+.closeBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeBtn > button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.contents{
+    text-align: center;
+}

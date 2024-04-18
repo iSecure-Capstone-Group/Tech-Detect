@@ -42,9 +42,11 @@ const Review = (props) => {
                     </div>
                     
                     <p className={styles.reviewerName}>{props.name}</p>
-                    <p className={styles.reviewerReview}><q>{props.review}</q></p>
+                    <div className={styles.reviewRateContainer}>
+                        <p className={styles.reviewerReview}><q>{props.review}</q></p>
 
-                    <Rating />
+                        <Rating />
+                    </div>
                 </div>
             </div>
         </>

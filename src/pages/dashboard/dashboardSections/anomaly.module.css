@@ -1,0 +1,63 @@
+.anomalyChartTitle{
+    text-align: center;
+    background-color: #FFF7EB;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 7.5px;
+}
+
+.lineChartCintainer{
+    background-color: white;
+    margin-bottom: 38px;
+}
+
+.lineChartDonutContainer{
+    width: 75%;
+}
+
+/* .donutBoxexContainer{
+    background-color: yellow;
+    display: flex;
+} */
+
+.anomalyChartActivityLogContainerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anomalyActivityLogContainer{
+    width: 20%;
+    background-color: white;
+}
+
+.activityLogComponenet{
+    margin-top: 16px;
+    padding: 8px;
+}
+
+.activityLogComponenet:not(:last-child){
+    border-bottom: 0.5px solid  #4D4D4D; 
+}
+
+/* #### From Activity Log File #### */
+
+.activityLogContainer{
+    line-height: 24px;
+    font-size: 12px;
+}
+.activityLog
+{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 8px; */
+   
+}
+
+.activityLog > span{
+    width: 30%;
+    font-weight: 600;
+}
+.activityLog > p{
+    width: 70%;
+}
+

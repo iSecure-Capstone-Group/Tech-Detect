@@ -1,0 +1,48 @@
+.threatContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.barChartContainer{
+    width: 70%;
+    background-color: white;
+    padding: 14px;
+}
+
+.threatSummaryContainer{
+    width: 28%;
+    background-color: white;
+    padding: 24px 26px;
+}
+
+.threatMonitorSummaryContainer{
+    margin-bottom: 16px;
+    
+}
+
+
+/* ##### From threat summary file ##### */
+
+.propsthreatSummaryContainer{
+    line-height: 32px;
+    background-color: #FFF7EB;
+    padding: 18px;
+}
+
+.threatAndTimeContainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.threatAndTimeContainer > span{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.threatAndTimeContainer > p{
+    font-size: 14px;
+}
+
+
+

@@ -1,3 +1,4 @@
+import { useState } from "react"
 import styles from "./loginSignUp.module.css"
 import FormContainer from "../../components/forms/formContainers"
 import formContainerStyles from "../../components/forms/formContainer.module.css"
@@ -6,6 +7,12 @@ import { useFormik, Formik, Form, Field } from "formik"
 import YellowButton from "../../components/buttons/yellowButton"
 import { Routes, Route, Link } from "react-router-dom"
 import LoginPage from "./loginPage"
+import SuccessfulACcount from "../../components/modals/createAccountSuccess"
+import Logo from "../../components/logo"
+import resetStyles from "../../components/modals/modals.module.css"
+import LogoOnly from "../../components/logoOnly"
+
+
 const initialValues = {
     name: '',
     email: '',
@@ -14,6 +21,27 @@ const initialValues = {
 }
 
 const SignupPage = () => {
+
+    const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSubmit = async (values) => {
+    try {
+      const response = await fetch('your_api_endpoint_here', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+      const data = await response.json();
+      console.log(data); // Handle response from the backend
+      setIsSuccess(true); // Set isSuccess to true if the signup is successful
+      // Optionally, you can redirect the user to a different page here
+    } catch (error) {
+      console.error('Error creating account:', error);
+      // Handle error scenario (e.g., show error message to the user)
+    }
+  };
     // const { values, handleBlur, handleChange, handleSubmit, errors } = useFormik({
     //     initialValues: initialValues,
     //     validationSchema: LoginSignupValidation,
@@ -30,10 +58,15 @@ const SignupPage = () => {
                         <h6 className={formContainerStyles.createAccount}>Create an Account</h6>
                         <p className={formContainerStyles.fillForm}>Please kindly fill in the details to create an account with TechDetect</p>
                     </div>
-
+                    {isSuccess ? (
+                        <div className={formContainerStyles.successMessage}>
+                        Account created successfully! {/* You can customize this message */}
+                        </div>
+                    ) : (
                     <Formik
                      initialValues={initialValues}
                      validationSchema={LoginSignupValidation}
+                     onSubmit={(values) => handleSubmit(values)} // Call the handleSubmit function on form submission
                     >
                         {({errors}) => (
                             <Form className={formContainerStyles.form}>
@@ -87,9 +120,25 @@ const SignupPage = () => {
                                     terms of service</Link></span>
                                 </div>
 
-                                <YellowButton yellowBtn="Get Started" variant="long" >
-                                    <p>Create Account</p>
+                                <YellowButton yellowBtn="Get Started" variant="long">
+                                    <button type="submit">Create Account</button>
                                 </YellowButton>
+                                {/* <SuccessfulACcount
+                                    modalContent={[
+                                        <div className={resetStyles.contents}>
+                                            <div key="1"><LogoOnly /></div>,
+                                            <p key="2"><svg width="121" height="121" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60.5 110.5c27.5 0 50-22.5 50-50s-22.5-50-50-50-50 22.5-50 50 22.5 50 50 50Z" stroke="#007300" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M39.25 60.5 53.4 74.65l28.35-28.3" stroke="#007300" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></p>,
+                                            <h5 key="3">Congratulations</h5>,
+                                            <p>You have successfully created your account</p>,
+                                            <div key="4">
+                                                <YellowButton yellowBtn="Get Started" variant="long" >
+                                                    <Link to="/loginPage">Get Started</Link>
+                                                </YellowButton>
+                                            </div>,
+                                        </div>
+                                        
+                                    ]}
+                                /> */}
 
                                 <div className={formContainerStyles.createAccountLogin}>
                                     <p>Already have an account?</p>
@@ -104,7 +153,7 @@ const SignupPage = () => {
                         )}
                         
                     </Formik>
-
+                    )}
                     
                 </div>
 

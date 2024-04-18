@@ -53,3 +53,25 @@
 .rights{
     padding: 16px 80px 48px 80px;
 }
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+/* ###############  MOBILE VIEW  ############## */
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .footerLogoContactNav{
+        flex-wrap: wrap;
+        gap: 48px;
+    }
+
+    .footerSectionContainer{
+        width: 100%;
+
+    }
+}
+
+/* ###############  TABLET VIEW  ############## */
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .footerLogoContactNav{
+        padding: 48px 55px;
+    }
+}

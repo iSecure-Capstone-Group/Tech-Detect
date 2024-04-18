@@ -13,6 +13,7 @@ import aboutUsStyles from "./aboutPage.module.css"
 import AboutPageFeatureSection from "../../components/aboutPageFeature/aboutPageFeatureSection"
 import OurGoals from "../../components/ourGoals/ourGoals"
 import Newsletter from "../../components/newsletter/newsletter"
+import withNavigation from "../../components/HOCs/withNavigationBar"
 
 const AboutUsPage = () => {
     return(
@@ -86,7 +87,7 @@ const AboutUsPage = () => {
 
             <div className={styles.featuresSectionContainer}>
                 <SectionHeading heading="Meet Our Esteemed Team"/>
-                <div className={styles.featuresContainer}>
+                <div className={`${styles.featuresContainer} ${styles.aboutPageFeatures}`}>
                     <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1711516759/Frame_37_1_xqtxoy.svg" featureTitle="Margaret Yvonne " featureDescription="C.E.O"/>
 
                     <Feautures featureImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1711516759/Frame_37_2_zzrcqh.svg" featureTitle="Leathia Amanih" featureDescription="Cyber Security lead"/>
@@ -108,4 +109,4 @@ const AboutUsPage = () => {
     )
 }
 
-export default AboutUsPage
+export default withNavigation(AboutUsPage)
