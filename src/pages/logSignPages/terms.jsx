@@ -7,7 +7,7 @@ const Terms = () => {
         <>
             <div className={styles.termsContainer}>
                 <div className={styles.termsHeading}>
-                    <Link to="/signupPage"><svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 12.5h-14M12.5 19.5l-7-7 7-7" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></Link>
+                    <Link to="/signup"><svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 12.5h-14M12.5 19.5l-7-7 7-7" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></Link>
                     <h4 className={`${formContainerStyles.createAccount} ${styles.termsOfService}`}>Terms of Service</h4>
                 </div>
 

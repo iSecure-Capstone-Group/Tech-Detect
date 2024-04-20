@@ -27,17 +27,19 @@ const Home = () => {
                 <div className={styles.aboutUsHomeContainer}>
                     <SectionHeading heading="About Us"/>
                     <AboutUs />
-                    <Link to="./aboutPage" className={styles.shortYellowButton}>
+                    <Link to="/about" className={styles.shortYellowButton}>
                         <YellowButton yellowBtn="Get Started" variant="center">
-                            <p>Read more</p>
+                            <button type="button">Read more</button>
                         </YellowButton>
                     </Link>
 
-                    <div className={styles.longYellowbutton}>
+                    <Link to="/about" className={styles.longYellowbutton}>
                         <YellowButton yellowBtn="Get Started" variant="long">
-                            <p>Read more</p>
+                            {/* <p>Read more</p> */}
+                            <button type="button">Read more</button>
+
                         </YellowButton>
-                    </div>
+                    </Link>
                 </div>
 
                 <div className={styles.featuresSectionContainer}>

@@ -103,7 +103,8 @@ const ForgotPasswordPage = () => {
                                                 <div className={formContainerStyles.formErrors}>{errors.confirmpassword}</div>
                                                 <div key="4">
                                                 <YellowButton yellowBtn="Get Started" variant="long" >
-                                                    <Link to="/loginPage">Get Started</Link>
+                                                    {/* <Link to="/login"><button type="submit">Get Started</button></Link> */}
+                                                    <button type="submit">Get Started</button>
                                                 </YellowButton>
                                                 </div>,
                                             </div>
@@ -112,7 +113,7 @@ const ForgotPasswordPage = () => {
                                         // Add more elements as needed
                                     ]}
                                 />
-                                <Link to="/loginPage" className={styles.bacButton}>Back</Link>
+                                <Link to="/login" className={styles.bacButton}>Back</Link>
 
                                 
                             </Form>
