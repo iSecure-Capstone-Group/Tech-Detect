@@ -4,6 +4,7 @@ import articleSectionStyles from "./articleSection.module.css"
 import styles from "../../pages/logSignPages/terms.module.css"
 import formContainerStyles from "../forms/formContainer.module.css"
 import DataPrivacyArticle from "../../pages/resources/dataPrivacyArticle";
+import { Outlet } from "react-router-dom";
 
 
 const Articles = (props) => {
@@ -40,11 +41,12 @@ const Articles = (props) => {
                 </div>
                 
                 <YellowButton yellowBtn="Get Started" variant="left">
-                    <Link to="/dataPrivacyArticle" className={articleSectionStyles.featureArticle}>Read More</Link>
+                    <Link to="./dataPrivacyArticle" className={articleSectionStyles.featureArticle}>Read More</Link>
                     {/* <Routes>
                         <Route path="/dataPrivcacyArticle" element={<DataPrivacyArticle />} />
                     </Routes> */}
                 </YellowButton>
+                <Outlet />
                 
             </div>
             <div className={`${articleSectionStyles.articleCardContainer} ${articleSectionStyles.articlescardContainer}`}>{articles.map((item) => (

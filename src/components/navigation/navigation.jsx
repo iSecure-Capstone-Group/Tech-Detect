@@ -24,13 +24,13 @@ const Navigation = () => {
             <ul className={styles.navUl}>
                 <div className={styles.navHomeAboutFeaturesResourcesContainer}>
                     <li className={styles.navli}><Link to="/">Home</Link></li>
-                    <li className={styles.navli}><Link to="/aboutPage">About</Link></li>
+                    <li className={styles.navli}><Link to="/about">About</Link></li>
                     {/* <li><Link to="/featuresPage">Features</Link></li> */}
-                    <li className={styles.navli}><Link to="/resourcesPage">Resources</Link></li>
+                    <li className={styles.navli}><Link to="/resources">Resources</Link></li>
                 </div>
                 <div className={styles.navLoginSignupContainer}>
-                    <li className={`${styles.navli} ${styles.navliWhiteHover}`}><Link to="/loginPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>
-                    <li className={`${styles.navli} ${styles.navliWhiteHover}`}><Link to="/signupPage" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>SignUp</Link></li>
+                    <li className={`${styles.navli} ${styles.navliWhiteHover}`}><Link to="/login" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>
+                    <li className={`${styles.navli} ${styles.navliWhiteHover}`}><Link to="/signup" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>SignUp</Link></li>
                     {/* Example of conditional navigation */}
                     {/* {pathname !== '/login' && (
                         <li><Link to="/login" className={`${buttons.yellowBtn}  ${buttons.whiteBG}`}>Login</Link></li>

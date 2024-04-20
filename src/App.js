@@ -1,7 +1,7 @@
 import './App.css';
 import Navigation from './components/navigation/navigation';
-import Home from './pages/homePage/homePage';
-import AboutUsPage from './pages/aboutPage/aboutPage';
+// import Home from './pages/homePage/homePage';
+// import AboutUsPage from './pages/aboutPage/aboutPage';
 import LoginPage from './pages/logSignPages/loginPage';
 import SignupPage from './pages/logSignPages/signupPage';
 import FeaturesPage from './pages/featuresPage/featuresPage';
@@ -9,37 +9,157 @@ import ResourcePage from './pages/resources/resourcePage';
 import ForgotPasswordPage from './pages/logSignPages/forgotPassword';
 import Terms from './pages/logSignPages/terms';
 import DataPrivacyArticle from './pages/resources/dataPrivacyArticle';
+// import Dashboard from './pages/dashboard/dashboard';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+import HomePage from './pages/homePage/homePage';
+import AboutPage from './pages/aboutPage/aboutPage';
 import Dashboard from './pages/dashboard/dashboard';
-// import Overview from './pages/dashboard/dashboardSections/overview';
-// import incidence from './pages/dashboard/dashboardSections/incidence';
-import { Routes, Route } from 'react-router-dom';
-// import Incidence from './pages/dashboard/dashboardSections/incidence';
+import Articles from './components/resourceArticle/articleSection';
+import ThreatMonitoring from './pages/dashboard/dashboardSections/threatMonitoring';
+import Incidence from './pages/dashboard/dashboardSections/incidence';
+import Overview from './pages/dashboard/dashboardSections/overview';
+import Anomaly from './pages/dashboard/dashboardSections/anomaly';
+import RealTimeAlerts from './pages/dashboard/dashboardSections/realTimeAlerts';
+import ProfileManagement from './pages/dashboard/dashboardSections/profileManagement';
+import HelpANdSupport from './pages/dashboard/dashboardSections/helpAndSupport';
+import Settings from './pages/dashboard/dashboardSections/settings';
+import Logout from './pages/dashboard/dashboardSections/logout';
 
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "about",
+    element: <AboutPage />,
+  },
+  
+  {
+    path: "resources",
+    element: <ResourcePage />,
+    // children: [
+    //   {
+    //     path: "dataPrivacyArticle",
+    //     element: <Articles />,
+    //   }
+    // ]
+  },
+
+  {
+    path: "signup",
+    element: <SignupPage />,
+    // children: [
+    //  {
+    //     path: "login",
+    //     element: <LoginPage />
+    //   },
+    //   {
+    //     path: "terms",
+    //     element: <Terms />
+    //   }, 
+    // ]
+  },
+  {
+    path: "login",
+    element: <LoginPage />,
+    
+  },
+  
+
+  {
+    path: "dashboard",
+    element: <Dashboard />,
+    children: [
+      {
+        path: "",
+        element: <Overview />,
+      },
+      {
+        path: "incidence-response",
+        element: <Incidence />,
+      },
+      {
+        path: "threat-monitoring",
+        element: <ThreatMonitoring />,
+      },
+      {
+        path: "anomaly-detection",
+        element: <Anomaly />,
+      },
+      {
+        path: "real-time-alerts",
+        element: <RealTimeAlerts />,
+      },
+      {
+        path: "profile-management",
+        element: <ProfileManagement />,
+      },
+      {
+        path: "help-support",
+        element: <HelpANdSupport />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
+      },
+      {
+        path: "logout",
+        element: <Logout />,
+      },
+       
+    ],
+  },
+  {
+    path: "terms",
+    element: <Terms />
+  },
+  {
+    path: "forgot-password",
+    element: <ForgotPasswordPage />,
+  },
+]);
 
 const App = () => {
   return (
-    
-    <>
-      
-      {/* <Navigation /> Always render navigation */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutPage" element={<AboutUsPage />} />
-        <Route path="/featuresPage" element={<FeaturesPage />} />
-        <Route path="/resourcesPage" element={<ResourcePage />} />
-        <Route path="/dataPrivacyArticle" element={<DataPrivacyArticle />} />
-        <Route path="/loginPage" element={<LoginPage />} />
-        <Route path="/forgotPassword" element={<ForgotPasswordPage />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="/signupPage" element={<SignupPage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        {/* <Route path="/overview" element={<Overview />} /> */}
-        {/* <Route path="/incidence" element={<Incidence />} /> */}
-      </Routes>
-      
-    </>
-    
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
   );
-}
+};
 
-export default App;
+export default App
+
+
+
+
+// import { Routes, Route } from 'react-router-dom';
+
+
+// const App = () => {
+//   return (
+    
+//     <>
+      
+      
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/aboutPage" element={<AboutUsPage />} />
+//         <Route path="/featuresPage" element={<FeaturesPage />} />
+//         <Route path="/resourcesPage" element={<ResourcePage />} />
+//         <Route path="/dataPrivacyArticle" element={<DataPrivacyArticle />} />
+//         <Route path="/loginPage" element={<LoginPage />} />
+//         <Route path="/forgotPassword" element={<ForgotPasswordPage />} />
+//         <Route path="/terms" element={<Terms />} />
+//         <Route path="/signupPage" element={<SignupPage />} />
+//         <Route path="/dashboard" element={<Dashboard />} />
+        
+//       </Routes>
+      
+//     </>
+    
+//   );
+// }
+
+// export default App;

@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
+
 const initialValues = {
     name: '',
     email: '',
@@ -95,12 +96,13 @@ const LoginPage = () => {
 
 
                                 <div className={formContainerStyles.Checkboxterms}>
-                                    <input type="checkbox" name="" id="" className={formContainerStyles.formCheckbox} /><span className={`${formContainerStyles.checkboxSpan} ${styles.forgotPassword}`}>Remember me? <Link to="/forgotPassword" className={styles.forgot}>
+                                    <input type="checkbox" name="" id="" className={formContainerStyles.formCheckbox} /><span className={`${formContainerStyles.checkboxSpan} ${styles.forgotPassword}`}>Remember me? <Link to="/forgot-password" className={styles.forgot}>
                                     Forgot your password?</Link>
                                     {/* <Routes>
                                         <Route path="./forgotPassword" element={<ForgotPasswordPage />} />
                                     </Routes> */}
                                     </span>
+                                    
                                 </div>
 
                                 <YellowButton yellowBtn="Get Started" variant="long" >
@@ -117,22 +119,25 @@ const LoginPage = () => {
 
                                 <div className={formContainerStyles.createAccountLogin}>
                                     <p>Not registered yet?</p>
-                                    <Link to="/signupPage">Create an account</Link>
-                                    <Routes>
+                                    <Link to="/signup">Create an account</Link>
+                                    {/* <Routes>
                                         <Route path="/signupPage" element={<LoginPage />} />
-                                    </Routes>
+                                    </Routes> */}
                                 </div>
 
                                 
                             </Form>
+                            
                         )}
                         
                     </Formik>
+                    
             </div>
-
+            
             
             {/* <FormContainerContent /> */}
         </div>
+        
         </>
     )
 }

@@ -13,6 +13,7 @@ import resetStyles from "../../components/modals/modals.module.css"
 import LogoOnly from "../../components/logoOnly"
 
 
+
 const initialValues = {
     name: '',
     email: '',
@@ -114,10 +115,11 @@ const SignupPage = () => {
                                     placeholder="******************"
                                 /> */}
                                 <div className={formContainerStyles.formErrors}>{errors.confirmpassword}</div>
-
+                                
                                 <div className={formContainerStyles.Checkboxterms}>
                                     <input type="checkbox" name="" id="" className={formContainerStyles.formCheckbox} /><span className={formContainerStyles.checkboxSpan}>By clicking on this you agree to the <Link to="/terms" className="">
                                     terms of service</Link></span>
+                                    
                                 </div>
 
                                 <YellowButton yellowBtn="Get Started" variant="long">
@@ -139,29 +141,37 @@ const SignupPage = () => {
                                         
                                     ]}
                                 /> */}
+                                
 
                                 <div className={formContainerStyles.createAccountLogin}>
                                     <p>Already have an account?</p>
-                                    <Link to="/loginPage">Login</Link>
-                                    <Routes>
+                                    <Link to="/login">Login</Link>
+                                    {/* <Routes>
                                         <Route path="/loginPage" element={<LoginPage />} />
-                                    </Routes>
+                                    </Routes> */}
                                 </div>
-
+                                
                                 
                             </Form>
+                            
                         )}
+                        
                         
                     </Formik>
                     )}
+                    
                     
                 </div>
 
                 
                 {/* <FormContainerContent /> */}
+                
+                
             </div>
+            
         </>
     )
 }
+
 
 export default SignupPage
