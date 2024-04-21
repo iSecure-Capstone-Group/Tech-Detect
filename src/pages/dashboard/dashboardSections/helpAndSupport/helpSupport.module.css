@@ -1,0 +1,17 @@
+.contactConatiner{
+    width: 40%;
+    line-height: 35px;
+}
+
+.contactDetails{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+
+}
+
+.contactDetails > span{
+    width: 60%;
+    text-align: left;
+    font-weight: 400;
+}

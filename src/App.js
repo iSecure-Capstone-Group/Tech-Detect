@@ -21,9 +21,16 @@ import Overview from './pages/dashboard/dashboardSections/overview';
 import Anomaly from './pages/dashboard/dashboardSections/anomaly';
 import RealTimeAlerts from './pages/dashboard/dashboardSections/realTimeAlerts';
 import ProfileManagement from './pages/dashboard/dashboardSections/profileManagement';
-import HelpANdSupport from './pages/dashboard/dashboardSections/helpAndSupport';
-import Settings from './pages/dashboard/dashboardSections/settings';
+import HelpANdSupport from './pages/dashboard/dashboardSections/helpAndSupport/helpAndSupport';
+import Settings from './pages/dashboard/dashboardSections/settings/settings';
 import Logout from './pages/dashboard/dashboardSections/logout';
+import General from './pages/dashboard/dashboardSections/settings/general';
+import Privacy from './pages/dashboard/dashboardSections/settings/privacy';
+import Billing from './pages/dashboard/dashboardSections/settings/billing';
+import Security from './pages/dashboard/dashboardSections/settings/security';
+import HelpSupportContact from './pages/dashboard/dashboardSections/helpAndSupport/helpSupportContact';
+import HelpSupportFAQs from './pages/dashboard/dashboardSections/helpAndSupport/helpSupportFAQs';
+import HelpSupportTicket from './pages/dashboard/dashboardSections/helpAndSupport/helpSupportTicket';
 
 
 const router = createBrowserRouter([
@@ -99,10 +106,42 @@ const router = createBrowserRouter([
       {
         path: "help-support",
         element: <HelpANdSupport />,
+        children: [
+          {
+            path: "",
+            element: <HelpSupportContact />
+          },
+          {
+            path: "faqs",
+            element: <HelpSupportFAQs />
+          },
+          {
+            path: "ticket",
+            element: <HelpSupportTicket />
+          },
+        ]
       },
       {
         path: "settings",
         element: <Settings />,
+        children: [
+          {
+            path: "",
+            element: <General />
+          },
+          {
+            path: "privacy",
+            element: <Privacy />
+          },
+          {
+            path: "billing",
+            element: <Billing />
+          },
+          {
+            path: "security",
+            element: <Security />
+          },
+        ]
       },
       {
         path: "logout",

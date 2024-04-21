@@ -8,40 +8,35 @@ import styles from "./loginSignUp.module.css"
 import ForgotPasswordPage from "./forgotPassword"
 import Dashboard from "../dashboard/dashboard"
 import { useNavigate } from 'react-router-dom';
+import LogoOnly from "../../components/logoOnly"
+import axios from "axios"
+import { useState } from "react"
 
 
 
 
 const initialValues = {
-    name: '',
     email: '',
     password: '',
     confirmpassword: '',
 }
 const LoginPage = () => {
+    const [errorMessage, setErrorMessage] = useState("");
     const navigate = useNavigate();
-
-    
 
     const handleSubmit = async (values) => {
         try {
-            const response = await fetch('your_login_api_endpoint', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(values),
-            });
-            const data = await response.json();
-            console.log(data); // Handle response from the backend
-
-            // Optionally, you can redirect the user to a different page after successful login
-            navigate('/dashboard');
+        // Make the API call using Axios
+        const response = await axios.post("your_login_api_endpoint", values);
+        console.log(response.data); // Log the response data if needed
+        // Optionally, set user authentication state or store tokens in local storage
+        navigate("/dashboard"); // Navigate to the dashboard page after successful login
         } catch (error) {
-            console.error('Error logging in:', error);
-            // Handle error scenario (e.g., show error message to the user)
+        console.error("Error submitting form:", error);
+        setErrorMessage("Invalid email or password. Please try again."); // Set error message if API call fails
         }
     };
+
     return(
         <>
         <div className={formContainerStyles.formImageContainer}>
@@ -49,6 +44,7 @@ const LoginPage = () => {
             <div className={formContainerStyles.formContainer}>
 
             <div className={formContainerStyles.formIntroContainer}>
+                <LogoOnly />
                 <h6 className={formContainerStyles.createAccount}>Hi, Welcome Back!</h6>
                 <p className={formContainerStyles.fillForm}>Login to your account to continue</p>
             </div>
@@ -108,6 +104,11 @@ const LoginPage = () => {
                                 <YellowButton yellowBtn="Get Started" variant="long" >
                                     <button type="submit" >Login</button>
                                 </YellowButton>
+
+                                {errorMessage && (
+                                <div className={formContainerStyles.errorMessage}>
+                                {errorMessage}
+                                </div>)}
 
                                 {/* <Modal yellowBtnTitle="Reset Password">
 

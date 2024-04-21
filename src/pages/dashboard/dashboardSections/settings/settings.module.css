@@ -1,0 +1,50 @@
+.settingsContainer{
+    background-color: white;
+    padding: 32px 20px;
+    border-radius: 4px;
+    width: 90%;
+}
+
+
+/* #### From Settings Navigation component */
+
+.settingNavUl{
+    width: 100%;
+}
+.settingsNavContainer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.settingsNavli{
+    font-weight: 600;
+}
+
+/* ##### From SettingsHeadingcomponent ####### */
+.settingHeadingProps{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.headingContainer{
+    font-size: 16px;
+    margin-bottom: 24.23px;
+}
+
+/* ##########  From general ##### */
+.nameEmail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.labelField{
+    width: 48%;
+    /* margin-bottom: 12.74px; */
+}
+
+.settingsDescription{
+    padding: 16px;
+}

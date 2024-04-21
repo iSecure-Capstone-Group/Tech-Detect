@@ -28,6 +28,7 @@ const ForgotPasswordPage = () => {
             <div className={formContainerStyles.formContainer}>
 
             <div className={formContainerStyles.formIntroContainer}>
+                <LogoOnly />
                 <h6 className={formContainerStyles.createAccount}>Forgort your Password?</h6>
                 <p className={formContainerStyles.fillForm}>No worries! We've got you covered. Please enter the email address associated with your account, and we'll send you a link to reset your password.</p>
             </div>
