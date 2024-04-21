@@ -6,6 +6,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { LoginSignupValidation } from "../../../../components/forms/loginSignupFormValidation"
 import formContainerStyles  from "../../../../components/forms/formContainer.module.css"
+import axios from "axios"
 
 const initialValues = {
     username: '',
@@ -15,22 +16,18 @@ const initialValues = {
 }
 
 const General = () => {
-    const [isSuccess, setIsSuccess] = useState(false);
+    const [successMessage, setSuccessMessage] = useState('');
 
     const handleSubmit = async (values) => {
         try {
-        const response = await fetch('your_api_endpoint_here', {
-            method: 'POST',
-            headers: {
-            'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(values),
-        });
-        const data = await response.json();
-        console.log(data);
-        setIsSuccess(true); 
+        // Make the API call using Axios
+        const response = await axios.post('your_api_endpoint', values);
+        console.log(response.data); // Log the response data if needed
+        // Optionally, set the success message
+        setSuccessMessage('Submission successful!');
         } catch (error) {
-        console.error('Error creating account:', error);
+        console.error('Error submitting form:', error);
+        // Optionally, you can add logic to handle errors or display an error message
         }
     };
 
@@ -44,11 +41,7 @@ const General = () => {
 
                 <div className="#">
                     
-                    {isSuccess ? (
-                        <div >
-                        Account created successfully! {/* You can customize this message */}
-                        </div>
-                    ) : (
+                    
                     <Formik
                     initialValues={initialValues}
                     validationSchema={LoginSignupValidation}
@@ -93,7 +86,7 @@ const General = () => {
                                 <div >
                                         <div className={settingsStyles.jobField}>
                                             <label htmlFor="job" className={formContainerStyles.formLabel}>Job</label>
-                                            <Field type="=text" name="job" placeholder="Senior IT Analyst" className={formContainerStyles.formInput}></Field>
+                                            <Field type="text" name="job" placeholder="Senior IT Analyst" className={formContainerStyles.formInput}></Field>
                                             <div className={formContainerStyles.formErrors}>{errors.job}</div>
                                         </div>
 
@@ -103,14 +96,14 @@ const General = () => {
                                             <div className={formContainerStyles.formErrors}>{errors.description}</div>
                                         </div>
                                 </div>
-                                
+                                {successMessage && <div className={settingsStyles.successMessage}>{successMessage}</div>}
                                 <YellowButton yellowBtn="Get Started" variant="left">
-                                    <button type="submit">Create Account</button>
+                                    <button type="submit">Submit</button>
                                 </YellowButton>
                             </Form>
                         )}
                     </Formik>
-                    )}
+                    
                 </div>
                 
                 
