@@ -5,44 +5,42 @@ import formContainerStyles from "../../components/forms/formContainer.module.css
 import { LoginSignupValidation } from "../../components/forms/loginSignupFormValidation"
 import { useFormik, Formik, Form, Field } from "formik"
 import YellowButton from "../../components/buttons/yellowButton"
-import { Routes, Route, Link } from "react-router-dom"
+import { Routes, Route, Link, useNavigate } from "react-router-dom"
 import LoginPage from "./loginPage"
 import SuccessfulACcount from "../../components/modals/createAccountSuccess"
 import Logo from "../../components/logo"
 import resetStyles from "../../components/modals/modals.module.css"
 import LogoOnly from "../../components/logoOnly"
+import axios from "axios"
 
 
 
 const initialValues = {
     name: '',
+    phoneNumber: '',
     email: '',
+    companyName: '',
     password: '',
     confirmpassword: '',
 }
 
 const SignupPage = () => {
+    const [errorMessage, setErrorMessage] = useState("");
+    const navigate = useNavigate();
 
-    const [isSuccess, setIsSuccess] = useState(false);
-
-  const handleSubmit = async (values) => {
-    try {
-      const response = await fetch('your_api_endpoint_here', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),
-      });
-      const data = await response.json();
-      console.log(data); // Handle response from the backend
-      setIsSuccess(true); // Set isSuccess to true if the signup is successful
-      // Optionally, you can redirect the user to a different page here
-    } catch (error) {
-      console.error('Error creating account:', error);
-      // Handle error scenario (e.g., show error message to the user)
-    }
-  };
+    const handleSubmit = async (values) => {
+        try {
+        // Make the API call using Axios
+        const response = await axios.post("your_api_endpoint", values);
+        console.log(response.data); // Log the response data if needed
+        // Optionally, set the success message
+        navigate("/login"); // Navigate to the login page after successful signup
+        } catch (error) {
+        console.error("Error submitting form:", error);
+        setErrorMessage("Failed to create account. Please try again."); // Set error message if API call fails
+        }
+    };
+    
     // const { values, handleBlur, handleChange, handleSubmit, errors } = useFormik({
     //     initialValues: initialValues,
     //     validationSchema: LoginSignupValidation,
@@ -56,14 +54,11 @@ const SignupPage = () => {
                 <FormContainer formTitle="Create an Account" formInstruction="Please kindly fill in the details to create an account with TechDetect"  loginImage="https://res.cloudinary.com/dbv1y1xey/image/upload/v1711000102/Frame_23_1_hmju0x.svg"/>
                 <div className={formContainerStyles.formContainer}>
                     <div className={formContainerStyles.formIntroContainer}>
+                        <LogoOnly />
                         <h6 className={formContainerStyles.createAccount}>Create an Account</h6>
                         <p className={formContainerStyles.fillForm}>Please kindly fill in the details to create an account with TechDetect</p>
                     </div>
-                    {isSuccess ? (
-                        <div className={formContainerStyles.successMessage}>
-                        Account created successfully! {/* You can customize this message */}
-                        </div>
-                    ) : (
+                    
                     <Formik
                      initialValues={initialValues}
                      validationSchema={LoginSignupValidation}
@@ -71,6 +66,7 @@ const SignupPage = () => {
                     >
                         {({errors}) => (
                             <Form className={formContainerStyles.form}>
+
                                 <label htmlFor="name" className={formContainerStyles.formLabel}>Name</label>
                                 <Field type="text" name="name" placeholder="Enter your full name" className={formContainerStyles.formInput}></Field>
                                 {/* <input
@@ -82,6 +78,16 @@ const SignupPage = () => {
                                 /> */}
                                 <div className={formContainerStyles.formErrors}>{errors.name}</div>
 
+                                <label htmlFor="phoneNumber" className={formContainerStyles.formLabel}>Phone Number</label>
+                                <Field type="number" name="phoneNumber" placeholder="Enter your phone number" className={formContainerStyles.formInput}></Field>
+                                {/* <input
+                                    type="text" 
+                                    name="name"
+                                    onChange={handleChange}
+                                    value={values.name}
+                                    placeholder="ENter our full name"
+                                /> */}
+                                <div className={formContainerStyles.formErrors}>{errors.phoneNumber}</div>
 
                                 <label htmlFor="name" className={formContainerStyles.formLabel}>Email</label>
                                 <Field type="email" name="email" placeholder="Enter your email address" className={formContainerStyles.formInput}></Field>
@@ -93,6 +99,17 @@ const SignupPage = () => {
                                     placeholder="ENter your full name"
                                 /> */}
                                 <div className={formContainerStyles.formErrors}>{errors.email}</div>
+
+                                <label htmlFor="companyName" className={formContainerStyles.formLabel}>Company Name</label>
+                                <Field type="text" name="companyName" placeholder="Enter your company name" className={formContainerStyles.formInput}></Field>
+                                {/* <input 
+                                    type="email" 
+                                    name="email"
+                                    onChange={handleChange}
+                                    value={values.email}
+                                    placeholder="ENter your full name"
+                                /> */}
+                                <div className={formContainerStyles.formErrors}>{errors.companyName}</div>
 
                                 <label htmlFor="password" className={formContainerStyles.formLabel}>Password</label>
                                 <Field type="password" name="password" placeholder="******************" className={formContainerStyles.formInput}></Field>
@@ -117,7 +134,7 @@ const SignupPage = () => {
                                 <div className={formContainerStyles.formErrors}>{errors.confirmpassword}</div>
                                 
                                 <div className={formContainerStyles.Checkboxterms}>
-                                    <input type="checkbox" name="" id="" className={formContainerStyles.formCheckbox} /><span className={formContainerStyles.checkboxSpan}>By clicking on this you agree to the <Link to="/terms" className="">
+                                    <input type="checkbox" name="" id="" className={formContainerStyles.formCheckbox} required/><span className={formContainerStyles.checkboxSpan}>By clicking on this you agree to the <Link to="/terms" className="">
                                     terms of service</Link></span>
                                     
                                 </div>
@@ -142,7 +159,8 @@ const SignupPage = () => {
                                     ]}
                                 /> */}
                                 
-
+                                {errorMessage && <div className={formContainerStyles.errorMessage}>{errorMessage}</div>}
+                                
                                 <div className={formContainerStyles.createAccountLogin}>
                                     <p>Already have an account?</p>
                                     <Link to="/login">Login</Link>
@@ -158,7 +176,7 @@ const SignupPage = () => {
                         
                         
                     </Formik>
-                    )}
+                    
                     
                     
                 </div>
