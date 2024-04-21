@@ -22,8 +22,12 @@ import Anomaly from './pages/dashboard/dashboardSections/anomaly';
 import RealTimeAlerts from './pages/dashboard/dashboardSections/realTimeAlerts';
 import ProfileManagement from './pages/dashboard/dashboardSections/profileManagement';
 import HelpANdSupport from './pages/dashboard/dashboardSections/helpAndSupport';
-import Settings from './pages/dashboard/dashboardSections/settings';
+import Settings from './pages/dashboard/dashboardSections/settings/settings';
 import Logout from './pages/dashboard/dashboardSections/logout';
+import General from './pages/dashboard/dashboardSections/settings/general';
+import Privacy from './pages/dashboard/dashboardSections/settings/privacy';
+import Billing from './pages/dashboard/dashboardSections/settings/billing';
+import Security from './pages/dashboard/dashboardSections/settings/security';
 
 
 const router = createBrowserRouter([
@@ -103,6 +107,24 @@ const router = createBrowserRouter([
       {
         path: "settings",
         element: <Settings />,
+        children: [
+          {
+            path: "",
+            element: <General />
+          },
+          {
+            path: "privacy",
+            element: <Privacy />
+          },
+          {
+            path: "billing",
+            element: <Billing />
+          },
+          {
+            path: "security",
+            element: <Security />
+          },
+        ]
       },
       {
         path: "logout",
