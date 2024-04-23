@@ -48,3 +48,25 @@
 .settingsDescription{
     padding: 16px;
 }
+
+/* ##### From Privacy ##### */
+.infoChoiceConatiner{
+    width: 90%;
+}
+
+.InfoChoiceToggleContainer{
+    margin-bottom: 16px;
+}
+
+.InfoChoiceTitle{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0D0D0D;
+    margin-bottom: 8px;
+}
+
+.InfoChoiceToggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

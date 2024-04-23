@@ -20,14 +20,12 @@ const General = () => {
 
     const handleSubmit = async (values) => {
         try {
-        // Make the API call using Axios
-        const response = await axios.post('your_api_endpoint', values);
-        console.log(response.data); // Log the response data if needed
-        // Optionally, set the success message
+        
+        const response = await axios.post('our_endpoint', values);
+        console.log(response.data); 
         setSuccessMessage('Submission successful!');
         } catch (error) {
         console.error('Error submitting form:', error);
-        // Optionally, you can add logic to handle errors or display an error message
         }
     };
 
