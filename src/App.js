@@ -31,6 +31,7 @@ import Security from './pages/dashboard/dashboardSections/settings/security';
 import HelpSupportContact from './pages/dashboard/dashboardSections/helpAndSupport/helpSupportContact';
 import HelpSupportFAQs from './pages/dashboard/dashboardSections/helpAndSupport/helpSupportFAQs';
 import HelpSupportTicket from './pages/dashboard/dashboardSections/helpAndSupport/helpSupportTicket';
+import BillingAndSubscription from './pages/dashboard/dashboardSections/BillingAndSubscription/BillingAndSubscription';
 
 
 const router = createBrowserRouter([
@@ -98,6 +99,10 @@ const router = createBrowserRouter([
       {
         path: "real-time-alerts",
         element: <RealTimeAlerts />,
+      },
+      {
+        path: "subscription",
+        element: <BillingAndSubscription />,
       },
       {
         path: "profile-management",
