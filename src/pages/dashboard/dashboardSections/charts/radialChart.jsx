@@ -6,7 +6,7 @@ const RadialChart = () => {
       plotOptions: {
         radialBar: {
           hollow: {
-            size: '50%', // Adjust the size to represent 80% visually
+            size: '50%', 
           },
           fill: {
             colors: ['#FDAF33']
