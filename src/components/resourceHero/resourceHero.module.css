@@ -8,6 +8,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    z-index: -2;
+    
     
     /* padding: 40px 80px; */
     
