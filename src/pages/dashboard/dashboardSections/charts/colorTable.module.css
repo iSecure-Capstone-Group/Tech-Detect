@@ -61,3 +61,13 @@
   .yellow-col {
     background-color: yellow;
   } */
+
+/* ######### RESPONSIVE STYLING ########## */
+/* ######### MOBILE VIEW ########## */
+  @media screen and (max-width: 585px){
+    
+    .tableDataVertical{
+        writing-mode: vertical-rl; 
+        transform: rotate(180deg);
+    }
+  }

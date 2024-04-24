@@ -13,3 +13,14 @@
     
     /* background-color: #FAFAFA; */
 }
+
+/* ###############  MOBILE VIEW  ############## */
+
+@media screen and (max-width: 1253px){
+    .dashboard{
+        padding: 13px 24px;
+        
+        /* background-color: #FAFAFA; */
+    }
+
+}

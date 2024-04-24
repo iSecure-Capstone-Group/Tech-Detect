@@ -33,11 +33,21 @@
     padding: 0 45px 0 325px;
 } */
 
-.renderedContent{
+/* .renderedContent{
     background-color: green;
     
 }
 
 .whoYou{
     background-color: blue;
+} */
+
+
+/* ###############  MOBILE VIEW  ############## */
+
+@media screen and (max-width: 1253px){
+
+    .blackSideBarCOntainer{
+        display: none;
+    }
 }

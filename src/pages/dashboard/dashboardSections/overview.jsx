@@ -52,9 +52,11 @@ const Overview = () => {
 
             <div className={styles.pieChartContainer}>
               <div className={styles.pieChart}>
-                <p className={styles.chartTitle}>Active Incidents</p>
-                <SimplePieChart />
-                <div>
+                <div className={styles.titleAndPiechartContainer}>
+                  <p className={styles.chartTitle}>Active Incidents</p>
+                  <SimplePieChart />
+                </div>
+                <div className={styles.boxesAndYellowButtonContainer}>
                   <div className={styles.allBoxContainer}>
                     <div className={styles.threatBoxContainer}>
                       <span className={`${styles.threatBox} ${styles.red}`}></span>
@@ -71,7 +73,7 @@ const Overview = () => {
 
                     <div className={styles.overviewYellowButton}>
                       <YellowButton yellowBtn="Get Started" variant="center" >
-                          <Link to="/loginPage">View Report</Link>
+                          <Link to="#">View Report</Link>
                       </YellowButton>
                     </div>
                   </div>
@@ -86,8 +88,10 @@ const Overview = () => {
           </section>
 
           <section  className={styles.protectionStatusContainer}>
+            <div>
             <p className={styles.chartTitle}> Protection Status</p>
             <RadialChart />
+            </div>
             <div className={styles.protectionStatusList}>
               <ul>
                 <li>Enable Multi-Factor Authentication for an added layer of security.</li>

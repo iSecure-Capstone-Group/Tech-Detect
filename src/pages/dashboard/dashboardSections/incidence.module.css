@@ -146,3 +146,19 @@ td{
     border-radius: 4px;
 }
 
+
+
+/*  ##############  MOBILE VIEW ########## */
+
+@media screen and (max-width: 585px){
+    .dashBoardMenuIntro{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 585px){
+    .dashBoardMenuIntro{
+        font-size: 18px;
+    }
+}
+
