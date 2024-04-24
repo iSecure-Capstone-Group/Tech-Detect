@@ -5,6 +5,7 @@
 
 .barChartContainer{
     width: 70%;
+    
     background-color: white;
     padding: 14px;
 }
@@ -46,3 +47,35 @@
 
 
 
+/* ######## RESPONSIVE STYLING ######### */
+
+/* ######## TABLET VIEW ######### */
+@media screen and (max-width: 1253px){
+    .threatContainer{
+        flex-wrap: wrap;
+    }
+
+    .barChartContainer, .threatSummaryContainer{
+        width: 100%;
+    }
+    
+    .allThreatMonitorContainer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .threatMonitorSummaryContainer{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 797px){
+    .threatMonitorSummaryContainer{
+        width: 100%;
+    }
+
+    .barChartContainer{
+        width: 100%;
+    }
+}

@@ -74,7 +74,7 @@ const SimpleBarChart = () => {
       margin={{
         top: 10,
         right: 10,
-        left: 10,
+        left: -30,
         bottom: 10,
       }}
       barSize={20}
