@@ -210,7 +210,7 @@ td{
         font-size: 14px;
     }
 
-    table th:nth-child(n+2):nth-child(-n+5), table td:nth-child(n+2):nth-child(-n+5) {
+    .table th:nth-child(n+2):nth-child(-n+5), .table td:nth-child(n+2):nth-child(-n+5) {
         display: none;
     }
 }
