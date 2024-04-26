@@ -70,3 +70,14 @@
     justify-content: space-between;
     align-items: center;
 }
+
+
+/* ######## RESPONSIVE STYLING ########## */
+/* ######## TABLET STYLING ########## */
+
+@media screen and (max-width: 1253px){
+    .settingNavUl{
+        display: block;
+    }
+}
+
