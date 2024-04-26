@@ -16,28 +16,28 @@ const Privacy = () => {
                         <p className={settingsStyles.InfoChoiceTitle}>Data Sharing</p>
                         <div className={settingsStyles.InfoChoiceToggle}>
                             <p>Manage your preferences for data sharing with third-party applications or partners</p>
-                            <OnAndOffIcon />
+                            <div className={settingsStyles.toggle}><OnAndOffIcon /></div>
                         </div>
                     </div>
                     <div className={settingsStyles.InfoChoiceToggleContainer}>
                         <p className={settingsStyles.InfoChoiceTitle}>Acivity tracking</p>
                         <div className={settingsStyles.InfoChoiceToggle}>
                             <p> Manage your activity tracking preferences to control the data collected</p>
-                            <OnAndOffIcon />
+                            <div className={settingsStyles.toggle}><OnAndOffIcon /></div>
                         </div>
                     </div>
                     <div className={settingsStyles.InfoChoiceToggleContainer}>
                         <p className={settingsStyles.InfoChoiceTitle}>Location Sharing</p>
                         <div className={settingsStyles.InfoChoiceToggle}>
                             <p> Control whether your location information is shared with TechDetect for enhanced services.</p>
-                            <OnAndOffIcon />
+                            <div className={settingsStyles.toggle}><OnAndOffIcon /></div>
                         </div>
                     </div>
                     <div className={settingsStyles.InfoChoiceToggleContainer}>
                         <p className={settingsStyles.InfoChoiceTitle}>Third-Party Access</p>
                         <div className={settingsStyles.InfoChoiceToggle}>
                             <p>Control access to your TechDetect data by third-party applications and services.</p>
-                            <OnAndOffIcon />
+                            <div className={settingsStyles.toggle}><OnAndOffIcon /></div>
                         </div>
                     </div>
                 </PersonalInfoSharing>

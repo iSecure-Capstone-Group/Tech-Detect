@@ -75,9 +75,70 @@
 /* ######## RESPONSIVE STYLING ########## */
 /* ######## TABLET STYLING ########## */
 
+@media screen and (max-width: 1349px){
+    .settingsContainer{
+        width: 100%;
+    }
+
+    .infoChoiceConatiner{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1253px){
     .settingNavUl{
         display: block;
     }
+
+    
+}
+@media screen and (max-width: 933px){
+    .subDisappear{
+        display: none;
+    }
+
+    .InfoChoiceToggle > p{
+        font-size: 10px;
+        width: 70%;
+    }
+
+    .toggle{
+        width: 20%;
+        
+    }
+
+   
+}
+@media screen and (max-width: 664px){
+    .subDisappear{
+        display: none;
+    }
+
+    
+    .settingsNavContainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .settingsNavContainer{
+        font-size: 10px;
+    }
+
+    .nameEmail{
+        flex-wrap: wrap;
+    }
+
+    .labelField{
+        width: 100%;
+        /* margin-bottom: 12.74px; */
+    }
+}
+
+@media screen and (max-width: 540px){
+
 }
 
