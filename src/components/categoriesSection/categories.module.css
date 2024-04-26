@@ -17,7 +17,8 @@
     font-weight: 600;
     font-family: "Montserrat", sans-serif;  
     color: #FFFFFF;
-    width: 60%;
+    width: 100%;
+    padding: 20px;
     text-align: center;
 }
 
@@ -42,5 +43,40 @@
 
 .image1, .image2, .image3, .image4{
     width: 21%;
+}
+
+
+/* ###############  RESPONSIVE DESIGN  ##################### */
+
+/* ###############  MOBILE VIEW  ############## */
+@media screen and (max-width: 1192px){
+    .image1, .image2, .image3, .image4{
+        width: 23%;
+    }
+}
+@media screen and (max-width: 1104px){
+    .categoriesImageContainer{
+        flex-wrap: wrap;
+        padding: 40px 40px;
+    }
+   
+    .image1, .image2, .image3, .image4{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 541px){
+   
+    .image1, .image2, .image3, .image4{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 307px){
+   
+    .imageBackground p{
+        font-size: 18px;
+        padding: 10px;
+    }
 }
 
