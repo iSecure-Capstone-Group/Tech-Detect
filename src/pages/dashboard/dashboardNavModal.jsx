@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../../components/navigation/navigation.module.css"
 import { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
+
 import buttons  from "../../components/buttons/buttons.module.css"
 
 
