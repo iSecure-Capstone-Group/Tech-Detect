@@ -26,3 +26,9 @@
     font-size: 32px;
     color: red;
 } */
+
+@media screen and (max-width: 614px){
+    .logout{
+        width: 90%;
+    }
+}

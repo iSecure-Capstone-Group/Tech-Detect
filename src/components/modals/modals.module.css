@@ -36,3 +36,9 @@
 .contents{
     text-align: center;
 }
+
+@media screen and (max-width: 614px){
+    .modalContent{
+        width: 80%;
+    }
+}

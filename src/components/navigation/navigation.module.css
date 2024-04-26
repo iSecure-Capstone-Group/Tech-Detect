@@ -149,6 +149,10 @@
     .navContainer{
         padding: 10px 10px;
     }
+
+    .modalContent{
+        width: 300px;
+    }
 }
 
 
