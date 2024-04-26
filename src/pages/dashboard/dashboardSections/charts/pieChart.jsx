@@ -1,5 +1,6 @@
 
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
+import overviewStyles from "../overview.module.css"
 
 const SimplePieChart = () => {
 
@@ -29,7 +30,7 @@ const SimplePieChart = () => {
 
   return (
     <>
-        <div >
+        <div className={overviewStyles.originPiecChartContainer}>
             <ResponsiveContainer width="100%" height={180}>
                 <PieChart>
                     <Pie

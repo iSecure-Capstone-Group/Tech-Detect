@@ -42,6 +42,7 @@
     background-color: white;
     margin-bottom: 30px;
     padding-top: 8px;
+    
 }
 
 .pieChartContainer{
@@ -56,7 +57,12 @@
     background-color: white;
     padding: 8px;
     /* background-color: blue; */
+    /* z-index: 0; */
 }
+
+/* .originPiecChartContainer{
+    
+} */
 
 .overviewColorTable{
     width: 67%;

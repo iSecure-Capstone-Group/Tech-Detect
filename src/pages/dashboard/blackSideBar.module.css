@@ -13,7 +13,7 @@
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 174px;
+    gap: 100px;
 }
 
 .blackSIdeBArContentContainer > .blackSIdeBArContent > li{
@@ -26,6 +26,52 @@
     gap: 16px;
     
 }
+
+/* .dashboardNavModalContainer{
+    background-color: black;
+    padding-left: 0;
+} */
+
+/* .dashboardNavCloseBtn{
+    color: white;
+    display: flex; 
+    justify-content: end;
+    font-size: 20px;
+    padding-right: 15px;
+    margin-bottom: 0;
+    
+} */
+
+
+
+/* .modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent{
+    width: 400px;
+    padding-left: 20px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+}
+
+.closeBtn{
+    display: flex; 
+    justify-content: end;
+    color: black;
+    font-size: 20px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    
+} */
 
 
 

@@ -52,6 +52,10 @@
     border-radius: 100%;
 }
 
+.hamburgerMenuIcon{
+    display: none;
+}
+
 /* ###############  TABLET VIEW  ############## */
 
 
@@ -83,6 +87,11 @@
     .notification{
         display: none;
     }
+
+    .hamburgerMenuIcon{
+        display: block;
+    }
+
 }
 
 

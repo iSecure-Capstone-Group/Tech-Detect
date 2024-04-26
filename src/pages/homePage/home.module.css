@@ -50,6 +50,7 @@
 /* ###############  MOBILE VIEW  ############## */
 
 @media screen and (min-width: 200px) and (max-width: 768px){
+    
     .sponsors{
         padding: 30px 40px;
     }
@@ -89,6 +90,8 @@
         padding: 30px 20px;
     }
 
+    
+
     .featuresContainer{
         flex-wrap: wrap;
     }
@@ -110,6 +113,27 @@
         padding: 24px 20px;
         
     }
+    
 }
+
+/* ###############  MOBILE VIEW  ############## */
+
+@media screen and (max-width: 509px) {
+    .subscribeNewsletter{
+        background-color: #FFF7EB;
+        padding: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 588px){
+    .sponsors{
+        padding: 24px 10px;
+        
+    }
+}
+
+
+
 
 

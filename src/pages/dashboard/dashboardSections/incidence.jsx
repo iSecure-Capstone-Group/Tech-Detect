@@ -41,7 +41,7 @@ const Incidence = () => {
                     </div>
                 </div>
                 <div className={incidenceStyle.tableContainer}>
-                    <table>
+                    <table className={incidenceStyle.table}>
                         <tr>
                             <th>Incident Type</th>
                             <th>Affected Systems</th>
