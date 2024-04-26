@@ -75,3 +75,21 @@
         padding: 48px 55px;
     }
 }
+
+@media screen and (max-width: 469px){
+    .footerLogoContactNav, .rights{
+        padding: 48px 20px;
+    }
+
+    .footerUlContainer > .footerLi a, .contactDetails a {
+        font-size: 14px;
+    }
+
+    .footerHeading{
+        font-size: 18px;
+    }
+
+    .rights{
+        font-size: 12px;
+    }
+}
