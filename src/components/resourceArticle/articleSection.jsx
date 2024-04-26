@@ -51,7 +51,7 @@ const Articles = (props) => {
             </div>
             <div className={`${articleSectionStyles.articleCardContainer} ${articleSectionStyles.articlescardContainer}`}>{articles.map((item) => (
                 <div key={item.id} className={articleSectionStyles.articleCard}>
-                    <div>
+                    <div className={articleSectionStyles.imageContainer}>
                         <img src={item.articleImage} alt="" />
                     </div>
 
