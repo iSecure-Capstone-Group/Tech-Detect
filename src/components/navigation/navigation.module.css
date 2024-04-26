@@ -93,6 +93,8 @@
 /* ###############  MOBILE VIEW  ############## */
 /* @media screen and (min-width: 200px) and (max-width: 768px){ */
 
+
+
 @media screen and (max-width: 1253px) {
 
     .navContainer{
@@ -142,4 +144,12 @@
         width: 30%;
     }
 }
+
+@media screen and (max-width: 558px){
+    .navContainer{
+        padding: 10px 10px;
+    }
+}
+
+
 

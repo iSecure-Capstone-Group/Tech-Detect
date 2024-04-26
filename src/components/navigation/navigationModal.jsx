@@ -30,7 +30,7 @@ function NavModal({ onClose }) {
           <ul className={`${styles.navUl} ${styles.modalNavUl}`}>
             <div className={styles.modalNavLi}>
                 <li className={`${styles.navli} ${styles.navModalLi}`}><Link to="/">Home</Link></li>
-                <li className={`${styles.navli} ${styles.navModalLi}`}><Link to="./about">About</Link></li>
+                <li className={`${styles.navli} ${styles.navModalLi}`}><Link to="/about">About</Link></li>
                 <li className={`${styles.navli} ${styles.navModalLi}`}><Link to="/resources">Resources</Link></li>
                 <li className={`${styles.navli} ${styles.navModalLi}`}><Link to="/login">Login</Link></li>
                 <li className={`${styles.navli} ${styles.navModalLi}`}><Link to="/signup">SignUp</Link></li>
