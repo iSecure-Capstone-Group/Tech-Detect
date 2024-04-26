@@ -34,12 +34,15 @@
     /* background-color: yellow; */
     width: 25%;
     background-color: white;
+    padding-top: 8px;
 }
 
 .areaChartContainer{
     width: 100%;
     background-color: white;
     margin-bottom: 30px;
+    padding-top: 8px;
+    
 }
 
 .pieChartContainer{
@@ -54,7 +57,12 @@
     background-color: white;
     padding: 8px;
     /* background-color: blue; */
+    /* z-index: 0; */
 }
+
+/* .originPiecChartContainer{
+    
+} */
 
 .overviewColorTable{
     width: 67%;
@@ -122,4 +130,103 @@
     width: 30%;
     background-color: red;
 } */
+
+/* ###########  RESPONSIVE STYLING ############# */
+
+/*  ##############  TABLET VIEW ########## */
+
+@media screen and (max-width: 1233px){
+    .overviewChartsContainer{
+        flex-wrap: wrap;
+    }
+
+    .AnalysisIncidentHeatmapConatiner{
+        width: 100%;
+    }
+
+    .protectionStatusContainer{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .protectionStatusList{
+        display: flex;
+        align-items: center;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1014px){
+    .protectionStatusContainer{
+        width: 100%;
+    }
+
+    .threatBoxContainer > p{
+        font-size: 12px;
+    }
+}
+
+
+/*  ##############  MOBILE VIEW ########## */
+
+@media screen and (max-width: 745px){
+    .overview{
+        padding-right: 0;
+    }
+
+    .pieChartContainer{
+        flex-wrap: wrap;
+    }
+    .pieChart, .overviewColorTable{
+        width: 100%;
+        
+    }
+
+    .pieChart{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .titleAndPiechartContainer{
+        width: 60%;
+    }
+
+    .boxesAndYellowButtonContainer{
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    .overviewColorTable{
+        margin-bottom: 20px;
+    }
+}
+
+/*  ##############  MOBILE VIEW ########## */
+
+@media screen and (max-width: 585px){
+    .pieChart{
+        flex-wrap: wrap;
+    }
+
+    .titleAndPiechartContainer, .boxesAndYellowButtonContainer{
+        width: 100%;
+    }
+
+    .boxesAndYellowButtonContainer{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .protectionStatusContainer{
+        flex-wrap: wrap;
+    }
+    .protectionStatusList{
+        width: 100%;
+    }
+}
 

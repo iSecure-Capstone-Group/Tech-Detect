@@ -74,24 +74,32 @@ const ProfileManagement = () => {
                 </section>
 
                 <section className={profileMMStyles.settingsContainer}>
-                    <YellowButton yellowBtn="Get Started" variant="long" >
+               <div className={profileMMStyles.settingOptions}>
+                     <YellowButton yellowBtn="Get Started" variant="long" >
                         <Link to="#">Two Factor Authentication</Link>
                     </YellowButton>
+               </div>
+                <div className={profileMMStyles.settingOptions}>
                     <YellowButton yellowBtn="Get Started" variant="long" >
                         <Link to="#">General Settings</Link>
                     </YellowButton>
+                </div>
+                <div className={profileMMStyles.settingOptions}>
                     <YellowButton yellowBtn="Get Started" variant="long" >
                         <Link to="#">General Settings</Link>
                     </YellowButton>
+                </div>
+                <div className={profileMMStyles.settingOptions}>
                     <YellowButton yellowBtn="Get Started" variant="long" >
                         <Link to="#">Notification Settings Settings</Link>
                     </YellowButton>
+                </div >
                 </section>
             </div>
             
             <div className={`${incidenceStyle.tableContainer} ${profileMMStyles.activityLogContainer}`}>
                 <h4 className={profileMMStyles.logTitle}>Activity Log</h4>
-                <table>
+                <table className={profileMMStyles.profileTable}>
                     <tr>
                         <th>Date & Time</th>
                         <th>Activity Description</th>

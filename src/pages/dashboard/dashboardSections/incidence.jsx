@@ -41,7 +41,7 @@ const Incidence = () => {
                     </div>
                 </div>
                 <div className={incidenceStyle.tableContainer}>
-                    <table>
+                    <table className={incidenceStyle.table}>
                         <tr>
                             <th>Incident Type</th>
                             <th>Affected Systems</th>
@@ -58,7 +58,7 @@ const Incidence = () => {
                             <td>High</td>
                             <td>April 14, 2024</td>
                             <td>10:15am</td>
-                            <td> 
+                            <td className={incidenceStyle.status}> 
                                 <IncidenceStatus variant="resolved">
                                     Resolved
                                 </IncidenceStatus>
@@ -72,7 +72,7 @@ const Incidence = () => {
                             <td>Medium</td>
                             <td>April 6, 2024</td>
                             <td>12:20pm</td>
-                            <td>
+                            <td className={incidenceStyle.status}>
                                 <IncidenceStatus variant="inProgress">
                                     In Progress
                                 </IncidenceStatus>
@@ -86,7 +86,7 @@ const Incidence = () => {
                             <td>Low</td>
                             <td>April 2, 2024</td>
                             <td>04:30pm</td>
-                            <td> 
+                            <td className={incidenceStyle.status}> 
                                 <IncidenceStatus variant="resolved">
                                     Resolved
                                 </IncidenceStatus>
@@ -100,7 +100,7 @@ const Incidence = () => {
                             <td>High</td>
                             <td>March 11, 2024</td>
                             <td>11:00am</td>
-                            <td>
+                            <td className={incidenceStyle.status}>
                                 <IncidenceStatus variant="inProgress">
                                     In Progress
                                 </IncidenceStatus>
@@ -114,7 +114,7 @@ const Incidence = () => {
                             <td>Medium</td>
                             <td>March 5, 2024</td>
                             <td>06:00pm</td>
-                            <td> 
+                            <td className={incidenceStyle.status}> 
                                 <IncidenceStatus variant="resolved">
                                     Resolved
                                 </IncidenceStatus>
@@ -128,7 +128,7 @@ const Incidence = () => {
                             <td>High</td>
                             <td>March 4, 2024</td>
                             <td>04:00am</td>
-                            <td>
+                            <td className={incidenceStyle.status}>
                                 <IncidenceStatus variant="inProgress">
                                     In Progress
                                 </IncidenceStatus>
@@ -141,8 +141,8 @@ const Incidence = () => {
                             <td>Cloud Storage</td>
                             <td>High</td>
                             <td>March 4, 2024</td>
-                            <td>10:q5am</td>
-                            <td>
+                            <td>10:95am</td>
+                            <td className={incidenceStyle.status}>
                                 <IncidenceStatus variant="inProgress">
                                     In Progress
                                 </IncidenceStatus>
@@ -156,7 +156,7 @@ const Incidence = () => {
                             <td>High</td>
                             <td>March 4, 2024</td>
                             <td>10:44pm</td>
-                            <td> 
+                            <td className={incidenceStyle.status}> 
                                 <IncidenceStatus variant="resolved">
                                     Resolved
                                 </IncidenceStatus>
@@ -170,7 +170,7 @@ const Incidence = () => {
                             <td>Medium</td>
                             <td>March 4, 2024</td>
                             <td>11:30pm</td>
-                            <td> 
+                            <td className={incidenceStyle.status}> 
                                 <IncidenceStatus variant="resolved">
                                     Resolved
                                 </IncidenceStatus>
@@ -184,7 +184,7 @@ const Incidence = () => {
                             <td>High</td>
                             <td>Feb 26, 2024</td>
                             <td>11:17pm</td>
-                            <td>
+                            <td className={incidenceStyle.status}>
                                 <IncidenceStatus variant="resolved">
                                     Resolved
                                 </IncidenceStatus>

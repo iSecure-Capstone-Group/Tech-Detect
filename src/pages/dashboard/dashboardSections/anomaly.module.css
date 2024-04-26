@@ -26,7 +26,7 @@
 }
 
 .anomalyActivityLogContainer{
-    width: 20%;
+    width: 23%;
     background-color: white;
 }
 
@@ -61,3 +61,20 @@
     width: 70%;
 }
 
+/* ########  RESPONSIVE STYLING ######### */
+/*  ##############  TABLET VIEW ########## */
+
+@media screen and (max-width: 905px){
+    .anomalyChartActivityLogContainerContainer{
+        flex-wrap: wrap;
+    }
+
+    .lineChartDonutContainer{
+        width: 100%;
+    }
+
+    .anomalyActivityLogContainer{
+        width: 100%;
+        background-color: white;
+    }
+}

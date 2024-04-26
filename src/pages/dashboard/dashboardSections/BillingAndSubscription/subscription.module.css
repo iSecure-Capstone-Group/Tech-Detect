@@ -1,0 +1,94 @@
+.now{
+    width: 90%;
+    margin: auto;
+}
+
+.choosePlan{
+    font-weight: 600;
+    font-size: 44px;
+    font-family: "Open Sans", sans-serif; 
+    margin-bottom: 16px;
+}
+
+.chooseBestPlanContainer{
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.bestPlans{
+    font-size: 32px;
+    font-weight: 600;
+    color: #989898;
+}
+
+.bestPlans > span{
+    color: #FDBF5C;
+}
+
+.featureTitle{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.allCardsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ### From SimpleSLider Component */
+.price{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif; 
+    margin-bottom: 30px;
+}
+
+.duration{
+    font-size: 36px;
+    font-weight: 700;
+    color: #AEAEAE;
+}
+
+.subCard{
+    width: 31%;
+    border: 1px solid #1F1F1F;
+    height: 457px;
+    border-radius: 12px;
+}
+
+.premium{
+    background-color: #FEE6C0;
+}
+
+.subButton{
+    margin-bottom: 30px;
+}
+
+.subFeatures{
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.subType{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 12px;
+    /* background-color: red; */
+}
+
+/* ### From Sun=bType #### */
+.cardTypeContainer[typeVariant="free"] {
+    padding: 8px;
+    background-color: red;
+    width: 100%;
+  }
+
+  /* .free {
+    background-color: #bababa;
+    color: white;
+  } */
+
+.cardContentContainer{
+    padding: 0 25px;
+}

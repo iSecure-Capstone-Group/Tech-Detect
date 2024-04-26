@@ -146,3 +146,86 @@ td{
     border-radius: 4px;
 }
 
+/* ########  RESPONSIVE STYLING ######### */
+/*  ##############  TABLET VIEW ########## */
+
+@media screen and (max-width: 1287px){
+    .action{
+    display: block;
+    text-align: center;
+    
+    }
+}
+
+@media screen and (max-width: 1011px){
+   td{
+    font-size: 12px;
+   } 
+
+   .incidentSummary{
+    font-size: 16px;
+    }
+
+    td{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 897px){
+    .action{
+        display: block;
+        text-align: center;
+        
+    }
+
+    td{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 810px){
+    .incidentSumaryContainer{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .incidentSummaryCard{
+        width: 100%;
+    }
+}
+
+
+
+
+/*  ##############  MOBILE VIEW ########## */
+
+@media screen and (max-width: 682px){
+    td{
+        text-align: left;
+    }
+
+    th{
+        font-size: 14px;
+    }
+
+    .table th:nth-child(n+2):nth-child(-n+5), .table td:nth-child(n+2):nth-child(-n+5) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 585px){
+    .dashBoardMenuIntro{
+        font-size: 20px;
+    }
+}   
+
+@media screen and (max-width: 585px){
+    .dashBoardMenuIntro{
+        font-size: 18px;
+    }
+
+    
+}
+

@@ -6,6 +6,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -1;
     
     /* padding: 40px 80px; */
     
@@ -20,6 +21,7 @@
     background-color: rgba(234, 234, 234, 70%);
     padding: 40px 80px;
     border-radius: 10px;
+    
 }
 
 .reviewContainer{

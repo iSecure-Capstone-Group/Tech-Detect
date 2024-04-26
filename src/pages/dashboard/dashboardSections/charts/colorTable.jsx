@@ -55,12 +55,12 @@ const ColorTable = () => {
                             <td className={`${colorTableStyles.tableData} ${colorTableStyles.greenData}`}></td>
                         </tr>
                         <tr className={`${colorTableStyles.tableRow} ${colorTableStyles.categoriesContainer}`}>
-                            <td className={colorTableStyles.tableData}></td>
-                            <td className={colorTableStyles.tableData}>Very Low</td>
-                            <td className={colorTableStyles.tableData}>Low</td>
-                            <td className={colorTableStyles.tableData}>Moderate</td>
-                            <td className={colorTableStyles.tableData}>High</td>
-                            <td className={colorTableStyles.tableData}>Very High</td>
+                            <td className={`${colorTableStyles.tableData} ${colorTableStyles.tableDataVertical}`}></td>
+                            <td className={`${colorTableStyles.tableData} ${colorTableStyles.tableDataVertical}`}>Very Low</td>
+                            <td className={`${colorTableStyles.tableData} ${colorTableStyles.tableDataVertical}`}>Low</td>
+                            <td className={`${colorTableStyles.tableData} ${colorTableStyles.tableDataVertical}`}>Moderate</td>
+                            <td className={`${colorTableStyles.tableData} ${colorTableStyles.tableDataVertical}`}>High</td>
+                            <td className={`${colorTableStyles.tableData} ${colorTableStyles.tableDataVertical}`}>Very High</td>
                             
                         </tr>
                     </table>

@@ -59,3 +59,9 @@
     }
 }
 
+@media screen and (max-width: 509px) {
+    .subscribeButton{
+        width: 40%;
+    }
+}
+

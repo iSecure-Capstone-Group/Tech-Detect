@@ -6,6 +6,7 @@
 .formContainer{
     width: 50%;
     margin: auto;
+    padding-top: 50px;
 }
 
 
@@ -112,3 +113,50 @@
     text-align: center;
     margin-bottom: 32px;
 }
+
+
+
+/* ###########  RESPONSIVE STYLING ############# */
+
+/*  ##############  TABLET VIEW ########## */
+
+@media screen and (max-width: 1349px){
+    .imageContainer{
+        display: none;
+    
+    }
+
+    .formContainer{
+        width: 70%;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 771px){
+    .formContainer{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 612px){
+    .formContainer{
+        width: 97%;
+        padding: 50px 24px;
+    }
+}
+@media screen and (max-width: 517px){
+    .checkboxSpan{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 407px){
+    .checkboxSpan{
+        font-size: 10px;
+    }
+
+    .createAccountLogin{
+        font-size: 12px;
+    }
+}
+
+

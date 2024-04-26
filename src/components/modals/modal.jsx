@@ -84,9 +84,10 @@
 
 
 import styles from "./modals.module.css"
+import navStyles from "../navigation/navigation.module.css"
 const Modal = ({ children, onClose }) => {
   return (
-    <div className={styles.modal}>
+    <div className={`${styles.modal} ${navStyles.navModal}`}>
       <div className={styles.modalContent}>
         <div className={styles.closeBtn}>
           <button onClick={onClose}>&#x2716;</button>

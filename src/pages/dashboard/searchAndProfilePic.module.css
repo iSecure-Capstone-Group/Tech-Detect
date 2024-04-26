@@ -1,11 +1,13 @@
+.allSearchAndPic{
+    margin-bottom: 24px;
+}
+
 .searchAndPicConatiner{
     color: black;
     display: flex;
     padding-top: 32px;
-    margin-bottom: 24px;
     justify-content: space-between;
     width: 80%;
-    
     
 }
 
@@ -49,3 +51,82 @@
     background-color: yellow;
     border-radius: 100%;
 }
+
+.hamburgerMenuIcon{
+    display: none;
+}
+
+/* ###############  TABLET VIEW  ############## */
+
+
+@media screen and (max-width: 1252px){
+    .searchAndPicConatiner{
+        width: 70%;
+        padding-top: 8px;
+        gap: 5px;
+        flex-direction: row-reverse;
+    }
+
+    .allSearchAndPic{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .searchFieldContainer{
+        position: relative;
+        width: 85%;
+        
+    }
+
+    .notifcationAndPicContainer{
+        width: 10%;
+        text-align: center;
+    }
+
+    .notification{
+        display: none;
+    }
+
+    .hamburgerMenuIcon{
+        display: block;
+    }
+
+}
+
+
+/* ###############  MOBILE VIEW  ############## */
+
+@media screen and (max-width: 780px){
+    .notifcationAndPicContainer{
+        width: 15%;
+    }
+    .searchFieldContainer{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 512px){
+
+    .searchAndPicConatiner{
+        width: 80%;
+    }
+    .notifcationAndPicContainer{
+        width: 25%;
+    }
+    .searchFieldContainer{
+        width: 70%;
+    }
+
+    .searchField{
+        font-size: 16px;
+        padding: 21px 0 21px 30px;
+    }
+
+    .searchFieldIconContainer{
+        padding: 24px 11px 24px 10px;
+        
+    }
+}
+
+

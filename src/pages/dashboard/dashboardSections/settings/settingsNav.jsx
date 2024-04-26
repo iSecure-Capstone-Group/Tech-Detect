@@ -14,7 +14,7 @@ const SettingsNAvigationBar = () => {
                 <div className={settingStyles.settingsNavContainer}>
                     <li className={`${styles.navli} ${settingStyles.settingsNavli}`}><Link to="./">GENERAL</Link></li>
                     <li className={`${styles.navli} ${settingStyles.settingsNavli}`}><Link to="./privacy">PRIVACY</Link></li>
-                    <li className={`${styles.navli} ${settingStyles.settingsNavli}`}><Link to="./billing">BILLING & SUBSCRIPTION</Link></li>
+                    <li className={`${styles.navli} ${settingStyles.settingsNavli}`}><Link to="./billing">BILLING <span className={settingStyles.subDisappear}> & SUBSCRIPTION</span></Link></li>
                     <li className={`${styles.navli} ${settingStyles.settingsNavli}`}><Link to="./security">SECURITY</Link></li>
                 </div>
                 

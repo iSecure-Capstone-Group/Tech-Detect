@@ -1,9 +1,11 @@
 .articleSection{
-    margin-top: 109px;
+    margin-top: 50px;
+    
 }
 
 .categoriesSection{
     padding: 40px 0 64px 0;
+    
 }
 
 /* DATA PRIVACY ARTICLE */
@@ -30,3 +32,13 @@
 .dataPrivacyContainer{
     padding: 48px 80px 112.5px 80px;
 }
+
+
+/* ###############  TABLET VIEW  ############## */
+
+/* @media screen and (max-width: 1192px){
+    .categoriesSection{
+        padding: 40px 0 64px 0;
+        
+    }
+} */

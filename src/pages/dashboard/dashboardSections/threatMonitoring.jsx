@@ -25,7 +25,7 @@ const ThreatMonitoring = () => {
 
             <section className={threatStyles.threatSummaryContainer}>
               <p className={styles.chartTitle}>Threat Summary</p>
-              <div>
+              <div className={threatStyles.allThreatMonitorContainer}>
                 <div className={threatStyles.threatMonitorSummaryContainer}>
                   <ThreatSummary threatLocation="Application" time="30 mins ago" NumOfThreats="99 of 128 scanned" vulnerabilities="10 medium vulnerabilities detected"/>
                 </div>

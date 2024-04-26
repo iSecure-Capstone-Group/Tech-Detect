@@ -8,6 +8,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    z-index: -2;
+    
     
     /* padding: 40px 80px; */
     
@@ -51,5 +53,46 @@
 
 .yellowText{
     color: #FDAF33;
+}
+
+
+/* ###############  TABLET VIEW  ############## */
+
+@media screen and (max-width: 1349px){
+    .resourceHeroOverlay{
+        padding: 40px 35.27px;
+    }
+
+    .resourceHeroText{
+        width: 60%;
+    }  
+}  
+
+@media screen and (max-width: 833px){
+    .resourceHeroText{
+        width: 100%;
+        text-align: center;
+    }  
+}
+
+@media screen and (max-width: 641px){
+    .resourceHeroText{
+        font-size: 35px;
+    }  
+
+    .resourceHeroOverlay{
+        padding: 20px 35.27px;
+    }
+}
+
+@media screen and (max-width: 641px){
+    .resourceHeroText{
+        font-size: 30px;
+    } 
+}
+@media screen and (max-width: 344px){
+    .resourceHeroText{
+        font-size: 25px;
+    } 
 }
 
