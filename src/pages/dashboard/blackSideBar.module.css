@@ -27,73 +27,52 @@
     
 }
 
-/* .dashboardNavModalContainer{
-    background-color: black;
-    padding-left: 0;
-} */
+/* new sidebar */
 
-/* .dashboardNavCloseBtn{
-    color: white;
-    display: flex; 
-    justify-content: end;
-    font-size: 20px;
-    padding-right: 15px;
-    margin-bottom: 0;
-    
-} */
-
-
-
-/* .modal{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: black; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
 }
 
-.modalContent{
-    width: 400px;
-    padding-left: 20px;
-    background-color: #FFFFFF;
-    position: absolute;
-    top: 0px;
-    right: 0;
-    bottom: 0;
+.sidebar ul {
+  list-style-type: none;
+  padding: 20px;
 }
 
-.closeBtn{
-    display: flex; 
-    justify-content: end;
-    color: black;
-    font-size: 20px;
-    padding-right: 15px;
-    margin-bottom: 20px;
-    
-} */
-
-
-
-/* .mainContent{
-    padding: 0 45px 0 325px;
-} */
-
-/* .renderedContent{
-    background-color: green;
-    
+.sidebar ul li {
+  margin-bottom: 10px;
 }
 
-.whoYou{
-    background-color: blue;
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+/* .sidebar.open {
+  transform: translateX(0); 
 } */
 
 
-/* ###############  MOBILE VIEW  ############## */
+
+/* ###############  Tablet VIEW  ############## */
 
 @media screen and (max-width: 1253px){
 
     .blackSideBarCOntainer{
         display: none;
+    }
+}
+@media screen and (max-width: 433px){
+
+    .sidebar {
+        width: 280px;
     }
 }

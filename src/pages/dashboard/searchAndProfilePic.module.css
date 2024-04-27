@@ -29,9 +29,6 @@
 }
 
 .searchFieldIconContainer{
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     position: absolute;
     top: 0;
     padding: 24px 11px 24px 24px;
