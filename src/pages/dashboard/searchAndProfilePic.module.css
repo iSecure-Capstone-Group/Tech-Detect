@@ -29,9 +29,6 @@
 }
 
 .searchFieldIconContainer{
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     position: absolute;
     top: 0;
     padding: 24px 11px 24px 24px;
@@ -47,8 +44,11 @@
 
 .dummyProfilePic{
     width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 48px;
-    background-color: yellow;
+    background-color: #d9d3d3;
     border-radius: 100%;
 }
 

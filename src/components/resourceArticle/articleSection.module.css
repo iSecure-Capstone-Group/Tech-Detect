@@ -128,10 +128,20 @@
     } */
 }
 
+
+
+@media screen and (max-width: 1507px){
+    .mainArticle{
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 1098px){
     .articleBtnContainer{
         height: 300px;
     }
+
+    
 }
 @media screen and (max-width: 980px){
 
@@ -232,6 +242,10 @@
 @media screen and (max-width: 478px){
     .articleBtnContainer{
         height: 300px;
+    }
+
+    .main{
+        font-size: 10px;
     }
 
 }

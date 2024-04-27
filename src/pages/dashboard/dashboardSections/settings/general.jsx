@@ -95,7 +95,7 @@ const General = () => {
                                         </div>
                                 </div>
                                 {successMessage && <div className={settingsStyles.successMessage}>{successMessage}</div>}
-                                <YellowButton yellowBtn="Get Started" variant="left">
+                                <YellowButton yellowBtn="Get Started" variant="long">
                                     <button type="submit">Submit</button>
                                 </YellowButton>
                             </Form>
