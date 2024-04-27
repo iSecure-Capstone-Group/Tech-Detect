@@ -5,7 +5,7 @@ const HelpSupportTicket = () => {
         <>
             <div >
                 
-                I am HelpSupportTicket from Help and support
+                Help and Support Ticket 
             </div>
         </>
     )

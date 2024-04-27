@@ -49,7 +49,7 @@ function SimpleSlider() {
             </SubscriptionPlan>
           </div>
           <div className={cardStyles.cardContentContainer}>
-            <p className={cardStyles.price}>$0.00 <span className={cardStyles.duration}>/mo</span></p>
+            <p className={cardStyles.price}>$9.99 <span className={cardStyles.duration}>/mo</span></p>
             
             <div className={cardStyles.subButton}>
               <YellowButton yellowBtn="Get Started" variant="long">
@@ -76,7 +76,7 @@ function SimpleSlider() {
             </SubscriptionPlan>
           </div>
           <div className={cardStyles.cardContentContainer}>
-            <p className={cardStyles.price}>$0.00 <span className={cardStyles.duration}>/mo</span></p>
+            <p className={cardStyles.price}>$29.99 <span className={cardStyles.duration}>/mo</span></p>
             
             <div className={cardStyles.subButton}>
               <YellowButton yellowBtn="Get Started" variant="long">
@@ -103,7 +103,7 @@ function SimpleSlider() {
           </SubscriptionPlan>
         </div>
         <div className={cardStyles.cardContentContainer}>
-          <p className={cardStyles.price}>$0.00 <span className={cardStyles.duration}>/mo</span></p>
+          <p className={cardStyles.price}>$99.99 <span className={cardStyles.duration}>/mo</span></p>
           
           <div className={cardStyles.subButton}>
             <YellowButton yellowBtn="Get Started" variant="long">

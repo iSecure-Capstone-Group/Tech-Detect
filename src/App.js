@@ -34,6 +34,7 @@ import HelpSupportTicket from './pages/dashboard/dashboardSections/helpAndSuppor
 import BillingAndSubscription from './pages/dashboard/dashboardSections/BillingAndSubscription/BillingAndSubscription';
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -47,6 +48,16 @@ const router = createBrowserRouter([
   {
     path: "resources",
     element: <ResourcePage />,
+    // children: [
+    //   {
+    //     path: "dataPrivacyArticle",
+    //     element: <Articles />,
+    //   }
+    // ]
+  },
+  {
+    path: "dataPrivacyArticle",
+    element: <DataPrivacyArticle />,
     // children: [
     //   {
     //     path: "dataPrivacyArticle",

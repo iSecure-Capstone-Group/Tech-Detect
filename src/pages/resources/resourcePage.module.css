@@ -33,12 +33,21 @@
     padding: 48px 80px 112.5px 80px;
 }
 
+.categoriesSection{
+    font-family: "Montserrat", sans-serif;
+}
+
 
 /* ###############  TABLET VIEW  ############## */
 
-/* @media screen and (max-width: 1192px){
-    .categoriesSection{
-        padding: 40px 0 64px 0;
+@media screen and (max-width: 906px){
+    .dataPrivacyContainer{
+        padding: 48px 20px 112.5px 20px;
+    }
+}
+@media screen and (max-width: 499px){
+    .categoriesYellowbtn  p{
+        font-size: 10px;
         
     }
-} */
+}

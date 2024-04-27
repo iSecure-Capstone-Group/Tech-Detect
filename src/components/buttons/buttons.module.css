@@ -10,8 +10,22 @@
     cursor: pointer;
 }
 
+.yellowBtnContainer{
+    padding: 16px;
+    border-radius: 4px;
+}
+
 .yellowBtnContainer[buttonVariant="center"]{
+    background-color: #FDAF33;
     text-align: center;
+    width: 20%;
+    margin: auto;
+}
+.yellowBtnContainer[buttonVariant="left"]{
+    background-color: #FDAF33;
+    text-align: center;
+    padding: 16px;
+    width: 30%;
 }
 .yellowBtnContainer[buttonVariant="long"]{
     text-align: center;
@@ -40,9 +54,16 @@
 button{
     background-color: transparent;
     width: 100%;
-    padding: 16px 8px;
+    /* padding: 16px 8px; */
     border-radius: 4px;
     cursor: pointer;
     outline: none;
     border: none;
+    font-family: "Montserrat", sans-serif; 
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

@@ -1,6 +1,7 @@
 .termsContainer{
     padding: 72px 80px;
     font-family: "Montserrat", sans-serif;
+   
 }
 
 .termsOfService{
@@ -24,7 +25,7 @@
 }
 
 .eachTermsContainer{
-    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 .eachTermsHeading{
@@ -33,4 +34,30 @@
 
 .eachTermsDescription{
     font-weight: normal;
+}
+
+
+/* ###########  RESPONSIVE STYLING ############# */
+
+/*  ##############  TABLET VIEW ########## */
+
+@media screen and (max-width: 1349px){
+    .termsContainer{
+        padding: 72px 30px;
+        /* background-color: red; */
+    }
+
+    
+}
+
+@media screen and (max-width: 602px){
+    .termsHeading{
+        display: flex;
+        align-items: center;
+        gap: 20%;
+    }
+
+    .termsOfService{
+        font-size: 20px;
+    }
 }

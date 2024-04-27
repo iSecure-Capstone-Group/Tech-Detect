@@ -33,9 +33,11 @@ const ResourcePage = () => {
                 <div className={Styles.categoriesSection}>
                     <SectionHeading heading="Categories"/>
                     <Categories />
+                    <div className={Styles.categoriesYellowbtn}>
                     <YellowButton yellowBtn="Get Started" variant="center" >
                         <p>View All</p>
                     </YellowButton>
+                    </div>
                 </div>
 
                 <ResourceHero variant="anotherHero">

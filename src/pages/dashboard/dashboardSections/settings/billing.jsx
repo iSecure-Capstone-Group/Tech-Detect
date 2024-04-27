@@ -5,7 +5,7 @@ const Billing = () => {
         <>
             <div >
                 
-                I am Billing from settings
+                Billing and Settings
             </div>
         </>
     )

@@ -40,12 +40,14 @@ const Articles = (props) => {
                     <p className={styles.eachTermsDescription}>{props.articleDetails1}</p>
                 </div>
                 
+                <div className={articleSectionStyles.main}>
                 <YellowButton yellowBtn="Get Started" variant="left">
-                    <Link to="./dataPrivacyArticle" className={articleSectionStyles.featureArticle}>Read More</Link>
+                    <Link to="/dataPrivacyArticle" className={articleSectionStyles.featureArticle}>Read More</Link>
                     {/* <Routes>
                         <Route path="/dataPrivcacyArticle" element={<DataPrivacyArticle />} />
                     </Routes> */}
                 </YellowButton>
+                </div>
                 <Outlet />
                 
             </div>
@@ -61,7 +63,7 @@ const Articles = (props) => {
                             <p className={`${styles.eachTermsDescription} ${articleSectionStyles.eachtermsDescription}`}>{item.articleDetails}</p>
                         </div>
                         <div >
-                            <YellowButton yellowBtn="Get Started" variant="left">
+                            <YellowButton yellowBtn="Get Started" variant="long">
                                 <p>Read More</p>
                             </YellowButton>
                         </div>

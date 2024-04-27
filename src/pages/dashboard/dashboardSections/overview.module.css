@@ -101,6 +101,17 @@
 
 .overviewYellowButton{
     margin-top: 16px;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
+    width: 100%;
+    font-size: 10px;
+    background-color:#FDAF33;
+    border-radius: 4px;
+}
+
+.overviewYellowButton a{
+    font-size: 16px;
 }
 
 .protectionStatusList > ul{

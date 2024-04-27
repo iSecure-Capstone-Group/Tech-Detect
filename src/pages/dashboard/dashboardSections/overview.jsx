@@ -72,9 +72,10 @@ const Overview = () => {
                     </div>
 
                     <div className={styles.overviewYellowButton}>
-                      <YellowButton yellowBtn="Get Started" variant="center" >
+                    <Link to="#">View Report</Link>
+                      {/* <YellowButton yellowBtn="Get Started" variant="center" >
                           <Link to="#">View Report</Link>
-                      </YellowButton>
+                      </YellowButton> */}
                     </div>
                   </div>
                 </div>
