@@ -1,5 +1,5 @@
-.now{
-    width: 90%;
+.subPlanContainer{
+    width: 100%;
     margin: auto;
 }
 
@@ -42,6 +42,12 @@
     font-weight: 600;
     font-family: "Open Sans", sans-serif; 
     margin-bottom: 30px;
+    
+    
+}
+
+.cardContentContainer{
+    margin-top: 31px;
 }
 
 .duration{
@@ -51,9 +57,10 @@
 }
 
 .subCard{
-    width: 31%;
+    
+    width: 23%;
     border: 1px solid #1F1F1F;
-    height: 457px;
+    /* height: 457px; */
     border-radius: 12px;
 }
 
@@ -71,24 +78,122 @@
 }
 
 .subType{
+    /* background-color: yellow; */
+    /* margin-bottom: 40px; */
     display: flex;
-    justify-content: right;
-    margin-bottom: 12px;
-    /* background-color: red; */
+    justify-content: space-between;
+    
+    
+    
+}
+
+.cardTypeContainer{
+    padding: 6px 31px;
+    /* width: 40%; */
+    /* margin-bottom: 31px; */
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: white;
 }
 
 /* ### From Sun=bType #### */
 .cardTypeContainer[typeVariant="free"] {
-    padding: 8px;
-    background-color: red;
-    width: 100%;
-  }
+    background-color: #BABABA;
+    
+}
+.cardTypeContainer[typeVariant="basic"] {
+    background-color: #4D4D4D;
+}
+.cardTypeContainer[typeVariant="premium"] {
+    background-color: #FDBF5C;
+}
+.cardTypeContainer[typeVariant="enterprise"] {
+    background-color: #6A4A15;
+    color: #FEE6C0;
+}
 
-  /* .free {
-    background-color: #bababa;
-    color: white;
-  } */
 
 .cardContentContainer{
-    padding: 0 25px;
+    padding: 0 25px 50px 25px;
 }
+
+@media screen and (max-width: 1506px){
+    .allCardsContainer{
+        flex-wrap: wrap;
+    }
+
+    .subCard{
+    
+        width: 30%;
+        margin-bottom: 30px;
+        
+    }
+}
+
+@media screen and (max-width: 1148px){
+    .SubPlanContainer{
+        width: 70%;
+        margin: auto
+    }
+
+    
+
+    .subCard{
+    
+        width: 48%;
+        margin-bottom: 30px;
+        
+    }
+}
+
+@media screen and (max-width: 881px){
+    .SubPlanContainer{
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 619px){
+    .SubPlanContainer{
+        width: 60%;
+    }
+
+    .subCard{
+    
+        width: 100%;
+        margin-bottom: 30px;
+        
+    }
+
+    .choosePlan{
+        font-size: 32px;
+    }
+    
+    .bestPlans{
+        font-size: 24px;
+    }
+    
+
+}
+
+@media screen and (max-width: 469px){
+    .SubPlanContainer{
+        width: 80%;
+    }
+
+    .choosePlan{
+        font-size: 24px;
+    }
+    
+    .bestPlans{
+        font-size: 18px;
+    }
+
+    .price{
+        font-size: 28px;
+    }
+
+    .duration{
+        font-size: 24px;
+    }
+}
+
