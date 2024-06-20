@@ -43,14 +43,25 @@
 }
 
 .dummyProfilePic{
-    width: 48px;
+    /* width: 48px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    background-color: #d9d3d3;
+    border-radius: 100%; */
+    /* background-color: RED; */
+}
+/* .dummyProfilePic .googleProfilePic{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 48px;
     background-color: #d9d3d3;
     border-radius: 100%;
-}
+    background-color: RED;
+} */
 
 .hamburgerMenuIcon{
     display: none;
