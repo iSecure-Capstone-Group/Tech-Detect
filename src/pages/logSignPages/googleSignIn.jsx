@@ -3,7 +3,7 @@ import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../../firebase";
 // import style from "../dashboard/dashboard"
 
-const GoogleSignIn = () => {
+const GoogleSignIn = (props) => {
 //   function googleLogin() {
 //     const provider = new GoogleAuthProvider();
 //     signInWithPopup(auth, provider).then(async (result) => {
@@ -61,7 +61,7 @@ const googleLogin = () => {
             fill="#1976D2"
           />
         </svg>
-        <p className={styles.googleSignin}>Sign in with Google</p>
+        <p className={styles.googleSignin}>{props.promptText}</p>
       </div>
       
 
